@@ -15,10 +15,9 @@ public class HomeworkLesson08Task02 {
         int number = scanner.nextInt();
         scanner.close();
 
-        while (counter < 11)
-        {
-            System.out.println(counter + " X " + number + " = " + counter*number);
-            counter ++;
+        while (counter < 11) {
+            System.out.println(counter + " X " + number + " = " + counter * number);
+            counter++;
         }
     }
 }

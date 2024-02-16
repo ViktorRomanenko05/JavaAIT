@@ -1,4 +1,5 @@
 package home.app;
+
 /*
 Напишите программу, которая проверяет, соответствует ли введенный возраст условиям
 для получения водительских прав. В разных странах возраст, когда можно начать учиться
@@ -8,9 +9,7 @@ package home.app;
  */
 public class HomeworkLesson05Task03 {
 
-    public static void main(String[] args)
-
-    {
+    public static void main(String[] args) {
 
         byte applicantsAge = 65;
 

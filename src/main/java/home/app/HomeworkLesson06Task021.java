@@ -19,13 +19,9 @@ public class HomeworkLesson06Task021 {
 
         int check = number / 2;
 
-        if (check * 2 == number)
-        {
+        if (check * 2 == number) {
             System.out.println("Введённое число является чётным");
-        }
-
-        else
-        {
+        } else {
             System.out.println("Введённое число является нечётным");
         }
 

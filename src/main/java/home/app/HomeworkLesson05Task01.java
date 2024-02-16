@@ -17,18 +17,11 @@ public class HomeworkLesson05Task01 {
         double numberA = 10;
         double numberB = 10;
 
-        if (numberA > numberB)
-        {
+        if (numberA > numberB) {
             System.out.println("a больше b");
-        }
-
-        else if (numberA < numberB)
-        {
+        } else if (numberA < numberB) {
             System.out.println("a меньше b");
-        }
-
-        else
-        {
+        } else {
             System.out.println("a равно b");
         }
     }

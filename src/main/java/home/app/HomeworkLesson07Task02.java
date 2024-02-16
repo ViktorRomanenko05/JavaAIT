@@ -43,11 +43,10 @@ public class HomeworkLesson07Task02 {
 
         scanner.close();
 
-        if ((questOne.equals("Да") || questOne.equals("да")||questOne.equals("нет")|| questOne.equals("Нет"))&&
-             (questTwo.equals("A") || questTwo.equals("a") || questTwo.equals("А") || questTwo.equals("а")   ||
-              questTwo.equals("b") || questTwo.equals("B") || questTwo.equals("В") ||
-              questTwo.equals("C") || questTwo.equals("c") || questTwo.equals("С") || questTwo.equals("с")))
-        {
+        if ((questOne.equals("Да") || questOne.equals("да") || questOne.equals("нет") || questOne.equals("Нет")) &&
+                (questTwo.equals("A") || questTwo.equals("a") || questTwo.equals("А") || questTwo.equals("а") ||
+                        questTwo.equals("b") || questTwo.equals("B") || questTwo.equals("В") ||
+                        questTwo.equals("C") || questTwo.equals("c") || questTwo.equals("С") || questTwo.equals("с"))) {
             if (questOne.equals("Да") || questOne.equals("да")) {
                 score += 1;
                 oneQ = '+';
@@ -58,32 +57,26 @@ public class HomeworkLesson07Task02 {
                 twoQ = '+';
             }
 
-            if (questThree.equals("main"))
-            {
+            if (questThree.equals("main")) {
                 score += 1;
                 thrQ = '+';
             }
 
             System.out.println("========================" +
-                               "==========================================\n\nВАШ РЕЗУЛЬТАТ:\n");
+                    "==========================================\n\nВАШ РЕЗУЛЬТАТ:\n");
             System.out.println("Вопрос 1: " + oneQ + "\n" +
-                               "Вопрос 2: " + twoQ + "\n" +
-                               "Вопрос 3: " + thrQ + "\n");
+                    "Вопрос 2: " + twoQ + "\n" +
+                    "Вопрос 3: " + thrQ + "\n");
 
             if (score >= 2) {
                 System.out.println("Вы хорошо знаете программирование");
-            }
-            else
-            {
+            } else {
                 System.out.println("Вам нужно учиться больше");
             }
-        }
-
-        else
-        {
+        } else {
             System.out.println("==================================================================\n" +
-                               "\n!!! Введённые вами ответы не соответствуют необходимому формату.\n" +
-                               "Пожалуйста, перезапустите программу и введите ваши ответы корректно.");
+                    "\n!!! Введённые вами ответы не соответствуют необходимому формату.\n" +
+                    "Пожалуйста, перезапустите программу и введите ваши ответы корректно.");
         }
 
     }

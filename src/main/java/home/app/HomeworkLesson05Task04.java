@@ -12,26 +12,16 @@ package home.app;
 
 public class HomeworkLesson05Task04 {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         byte score = 96;
 
-        if (score >= 90)
-        {
+        if (score >= 90) {
             System.out.println("Отлично");
-        }
-
-        else if (70 <= score && score <= 89)
-        {
+        } else if (70 <= score && score <= 89) {
             System.out.println("Хорошо");
-        }
-
-        else if (50 <= score && score <= 69)
-        {
+        } else if (50 <= score && score <= 69) {
             System.out.println("Удовлетворительно");
-        }
-        else
-        {
+        } else {
             System.out.println("Неудовлетворительно");
         }
 

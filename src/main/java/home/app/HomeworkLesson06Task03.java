@@ -13,7 +13,7 @@ public class HomeworkLesson06Task03 {
         System.out.println("\nПрограмма для расчёта среднего балла\n");
         System.out.println("Введите Ваши оценки по пяти предметам:\n");
 
-        Scanner scanGrade = new Scanner (System.in);
+        Scanner scanGrade = new Scanner(System.in);
 
         System.out.println("Предмет 1: ");
         float sub1 = scanGrade.nextFloat();

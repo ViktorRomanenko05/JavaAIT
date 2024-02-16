@@ -15,10 +15,10 @@ public class HomeworkLesson08Task01 {
 
         System.out.println("Чётные числа от 0 до введённого значения включительно:");
 
-        for (int i = 0; i <= number; i++)
-        {
-            if (i % 2 ==0)
-            {System.out.print(i + " ");}
+        for (int i = 0; i <= number; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
 
         }
     }

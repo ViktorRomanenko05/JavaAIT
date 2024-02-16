@@ -15,9 +15,8 @@ public class HomeworkLesson08Task03 {
         int number = scanner.nextInt();
         scanner.close();
 
-        for (int i = 1; i <= number; i++)
-        {
-                sum += i;
+        for (int i = 1; i <= number; i++) {
+            sum += i;
         }
 
         System.out.println("\nСумма всех натуральных чисел перед " + number + " включительно, равна " + sum);

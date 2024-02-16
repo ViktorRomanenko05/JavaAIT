@@ -25,7 +25,7 @@ public class HomeworkLesson06Task051 {
 
         System.out.println("\nРАСПИСАНИЕ УРОКОВ\n");
         System.out.println("Чтобы узнать статус учебного процесса на данный момент,\n" +
-                           "введите пожалуйста текущее время в часах и минутах:\n ");
+                "введите пожалуйста текущее время в часах и минутах:\n ");
 
         Scanner scanTime = new Scanner(System.in);
 
@@ -43,28 +43,15 @@ public class HomeworkLesson06Task051 {
         "Обед" - имеет наименьшую вероятность обращения.
          */
 
-        if (hours >= 24 || minutes >= 60 || hours< 0 || minutes <0)
-        {
-            System.out.println ("Время введено не верно");
-        }
-
-        else if (8 <= hours && hours < 13 && minutes <= 44)
-        {
+        if (hours >= 24 || minutes >= 60 || hours < 0 || minutes < 0) {
+            System.out.println("Время введено не верно");
+        } else if (8 <= hours && hours < 13 && minutes <= 44) {
             System.out.println("Урок");
-        }
-
-        else if (hours == 12 || hours == 13 && minutes >= 30 || hours > 13 || hours < 8)
-        {
+        } else if (hours == 12 || hours == 13 && minutes >= 30 || hours > 13 || hours < 8) {
             System.out.println("Свободное время");
-        }
-
-        else if (hours < 13)
-        {
+        } else if (hours < 13) {
             System.out.println("Перемена");
-        }
-
-        else
-        {
+        } else {
             System.out.println("Обед");
         }
     }

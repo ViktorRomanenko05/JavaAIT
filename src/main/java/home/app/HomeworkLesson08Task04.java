@@ -13,8 +13,7 @@ public class HomeworkLesson08Task04 {
         int number = scanner.nextInt();
         scanner.close();
 
-        while (number != 0)
-        {
+        while (number != 0) {
             sum = sum + number % 10;
             number /= 10;
         }

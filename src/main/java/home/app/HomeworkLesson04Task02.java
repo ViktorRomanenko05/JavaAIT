@@ -12,6 +12,6 @@ public class HomeworkLesson04Task02 {
         short numberOne = 3500;
         short numberTwo = 6500;
         int result = numberOne + numberTwo;
-        System.out.println ("Результат: " + result);
+        System.out.println("Результат: " + result);
     }
 }

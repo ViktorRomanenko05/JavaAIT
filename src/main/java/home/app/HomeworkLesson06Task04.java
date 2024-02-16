@@ -4,6 +4,7 @@ package home.app;
 от категории товара и региона покупателя. Налог на электронику 10%, на одежду 5%.
 Если покупатель из региона A, применяется дополнительный налог 2%.
  */
+
 import java.util.Scanner;
 
 public class HomeworkLesson06Task04 {
@@ -12,7 +13,7 @@ public class HomeworkLesson06Task04 {
 
 
         System.out.println("Расчёт налога, начисляемого при покупке" +
-                           "\n \nВВЕДИТЕ ДАННЫЕ О ПОКУПКЕ\n");
+                "\n \nВВЕДИТЕ ДАННЫЕ О ПОКУПКЕ\n");
 
         Scanner scan = new Scanner(System.in);
 
@@ -34,13 +35,13 @@ public class HomeworkLesson06Task04 {
          */
 
         boolean check = region.equals("A") || region.equals("a") || region.equals("А") || region.equals("а");
-                                                                                    // Латиница || кириллица
+        // Латиница || кириллица
 
         float taxBase = electro + clths; // Расчёт налоговой базы
         float sum;                       // Общая сумма покупки с учётом налогов
         float sumAddTax = 0f;            // Сумма дополнительного регионального налога
         float sumTax;                    // Общая сумма всех налогов
-        byte  addTax = 0;                // Ставка регионального налога
+        byte addTax = 0;                // Ставка регионального налога
 
         float electroTax = electro * 0.1f;  // Сумма налога на покупки в категории "Электроника"
         float clthsTax = clths * 0.05f;     // Сумма налога на покупки в категории "Одежда"
@@ -48,15 +49,12 @@ public class HomeworkLesson06Task04 {
         float electroWithTax = electro + electroTax; // Общая сумма с учетом налога в категории "Электроника"
         float clthsWithTax = clths + clthsTax;       // Общая сумма с учетом налога в категории "Одежда"
 
-        if (check == false)
-        {
+        if (check == false) {
             sum = electroWithTax + clthsWithTax;
-        }
-        else
-        {
-            sum = taxBase*0.02f + electroWithTax + clthsWithTax;
+        } else {
+            sum = taxBase * 0.02f + electroWithTax + clthsWithTax;
             addTax = 2;
-            sumAddTax = taxBase*0.02f;
+            sumAddTax = taxBase * 0.02f;
         }
 
         sumTax = sumAddTax + electroTax + clthsTax;

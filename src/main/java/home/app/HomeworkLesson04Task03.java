@@ -9,10 +9,10 @@ package home.app;
 public class HomeworkLesson04Task03 {
     public static void main(String[] args) {
 
-        String song    = "Another Brick In The Wall (Part II)";
-        String album   = "The Wall";
+        String song = "Another Brick In The Wall (Part II)";
+        String album = "The Wall";
         String summary = "Name:  " + song + "\nAlbum: " + album;
-        System.out.println (summary);
+        System.out.println(summary);
 
     }
 }
