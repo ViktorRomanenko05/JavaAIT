@@ -38,7 +38,7 @@ package home.app;
 
 import java.util.Scanner;
 
-public class HomeworkLesson09Task02 {
+public class HomeworkLesson092 {
 
     public static void main(String[] args) {
 
@@ -51,7 +51,7 @@ public class HomeworkLesson09Task02 {
         boolean win = false;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\nЗдравствуйте!");
+        System.out.println("\nЗдравствуйте!\uD83D\uDE09");
 
         do {
             agree = 0;
@@ -87,7 +87,7 @@ public class HomeworkLesson09Task02 {
                     System.out.println("\nВведённое число больше искомого");
                     System.out.println("Количество оставшихся попыток: " + counter + "\n");
                 } else {
-                    System.out.println("ПОЗДРАВЛЯЮ! ВЫ ВЫИГРАЛИ!\n");
+                    System.out.println("ПОЗДРАВЛЯЮ! ВЫ ВЫИГРАЛИ!\uD83D\uDE00\n");
                     win = true;
                 }
 
@@ -95,7 +95,7 @@ public class HomeworkLesson09Task02 {
 
             if (counter < 1) {
                 System.out.println("К сожалению, вы проиграли.\n" +
-                        "В следующий раз всё получится!\n");
+                        "В следующий раз всё получится!\u2764\n");
             }
             System.out.println("Желаете ли сиграть еще?\n" +
                     "1 - ДА\n2 - НЕТ");

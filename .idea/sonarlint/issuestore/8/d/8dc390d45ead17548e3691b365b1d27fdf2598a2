@@ -1,0 +1,22 @@
+
+w
+java:S1192("UDefine a constant instead of duplicating this literal "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚: " 4 times.(‹¶¯ÿøÿÿÿÿ8ıŒ±°Û1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆÇê¢8Õ³Ÿ¤Û1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Çµí‘8¬°°Û1
+L	java:S106"+Replace this use of System.out by a logger.(¦¬¼şÿÿÿÿ8Æ±°Û1
+T
+java:S6126"2Replace this String concatenation with Text block.(¦¬¼şÿÿÿÿ8Æ±°Û1
+L	java:S106"+Replace this use of System.out by a logger.(¹ÿÿúıÿÿÿÿ8Æ±°Û1
+L	java:S106 "+Replace this use of System.out by a logger.(§Ü›¥ùÿÿÿÿ8Æ±°Û1
+L	java:S106("+Replace this use of System.out by a logger.(‹¶¯ÿøÿÿÿÿ8Æ±°Û1
+G	java:S106,"+Replace this use of System.out by a logger.(†¦ğğ8Æ±°Û1
+L	java:S1060"+Replace this use of System.out by a logger.(½û¶ëùÿÿÿÿ8Æ±°Û1
+G	java:S1067"+Replace this use of System.out by a logger.(¿»›8Ç±°Û1
+L	java:S106;"+Replace this use of System.out by a logger.(ûÑ–®ıÿÿÿÿ8Ç±°Û1
+G	java:S106?"+Replace this use of System.out by a logger.(×ÂıÔ8Ç±°Û1
+O
+java:S6126?"2Replace this String concatenation with Text block.(×ÂıÔ8Ç±°Û1
+L	java:S106F"+Replace this use of System.out by a logger.(íŒÿöıÿÿÿÿ8Ç±°Û1
+T
+java:S6126F"2Replace this String concatenation with Text block.(íŒÿöıÿÿÿÿ8Ç±°Û1

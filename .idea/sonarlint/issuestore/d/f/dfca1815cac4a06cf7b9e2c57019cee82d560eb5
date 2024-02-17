@@ -1,0 +1,12 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ıÉğ8îÚ¡ÓØ1
+e
+java:S3973"HUse indentation to denote the code conditionally executed by this "for".(ä²–¬8îÚ¡ÓØ1
+F	java:S106"+Replace this use of System.out by a logger.(Î±ä8úÚ¡ÓØ1
+G	java:S106"+Replace this use of System.out by a logger.(‹ÿî­8ûÚ¡ÓØ1
+F	java:S106"+Replace this use of System.out by a logger.(Î±ä8ûÚ¡ÓØ1
+G	java:S106"+Replace this use of System.out by a logger.(‹ÿî­8š”¢ÓØ1
+Q
+java:S1128"4Remove this unused import 'org.w3c.dom.ls.LSOutput'.(Ò½¾Š8üÚ¡ÓØ1
+Q
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8üÚ¡ÓØ1

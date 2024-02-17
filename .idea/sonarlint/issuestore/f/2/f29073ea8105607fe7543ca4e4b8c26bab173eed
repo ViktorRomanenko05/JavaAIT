@@ -1,0 +1,34 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆÇê¢
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Çµí‘8ÛªÀ¡Û1
+Y
+java:S18546"7Remove this useless assignment to local variable "win".(×ŸÉåşÿÿÿÿ8ÛªÀ¡Û1
+E
+java:S1481"(Remove this unused "win" local variable.(¿Õ™§8ÜªÀ¡Û1
+L	java:S106"+Replace this use of System.out by a logger.(âéÀ¹ıÿÿÿÿ8ßªÀ¡Û1
+F
+java:S2140")Use "java.util.Random.nextInt()" instead.(ˆ”ˆ8ßªÀ¡Û1
+F	java:S106"+Replace this use of System.out by a logger.(ñû²8àªÀ¡Û1
+N
+java:S6126"2Replace this String concatenation with Text block.(ñû²8àªÀ¡Û1
+G	java:S106#"+Replace this use of System.out by a logger.(¤·è·8àªÀ¡Û1
+G	java:S106("+Replace this use of System.out by a logger.(£‰Ó8áªÀ¡Û1
+G	java:S106/"+Replace this use of System.out by a logger.(¯å³Â8áªÀ¡Û1
+G	java:S1060"+Replace this use of System.out by a logger.(³øê8áªÀ¡Û1
+L	java:S1062"+Replace this use of System.out by a logger.(Èø³õşÿÿÿÿ8áªÀ¡Û1
+G	java:S1063"+Replace this use of System.out by a logger.(³øê8áªÀ¡Û1
+L	java:S1065"+Replace this use of System.out by a logger.(¸Â¹÷ûÿÿÿÿ8âªÀ¡Û1
+F	java:S106<"+Replace this use of System.out by a logger.(©‘E8âªÀ¡Û1
+N
+java:S6126<"2Replace this String concatenation with Text block.(©‘E8âªÀ¡Û1
+G	java:S106?"+Replace this use of System.out by a logger.(šàùÙ8âªÀ¡Û1
+O
+java:S6126?"2Replace this String concatenation with Text block.(šàùÙ8âªÀ¡Û1
+L	java:S106G"+Replace this use of System.out by a logger.(ÜÒî¾üÿÿÿÿ8âªÀ¡Û1
+L	java:S106L"+Replace this use of System.out by a logger.(Å—¦Óûÿÿÿÿ8ãªÀ¡Û1
+G	java:S106R"+Replace this use of System.out by a logger.(ª©›Ï8ãªÀ¡Û1
+F	java:S106X"+Replace this use of System.out by a logger.(’8ãªÀ¡Û1
+L	java:S106Z"+Replace this use of System.out by a logger.(´àŠõúÿÿÿÿ8ãªÀ¡Û1
+T
+java:S6126Z"2Replace this String concatenation with Text block.(´àŠõúÿÿÿÿ8ãªÀ¡Û1

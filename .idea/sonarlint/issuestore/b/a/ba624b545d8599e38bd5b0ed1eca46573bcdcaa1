@@ -1,0 +1,27 @@
+
+w
+java:S1192D"UDefine a constant instead of duplicating this literal "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚: " 4 times.(‹¶¯ÿøÿÿÿÿ8‚‹¸úÚ1
+L	java:S106
+"+Replace this use of System.out by a logger.(¿İ¨êıÿÿÿÿ8€ê €Ù1
+L	java:S106"+Replace this use of System.out by a logger.(â¥åûÿÿÿÿ8€ê €Ù1
+L	java:S106"+Replace this use of System.out by a logger.(‹µ‹¶ıÿÿÿÿ8€ê €Ù1
+L	java:S106"+Replace this use of System.out by a logger.(â¥åûÿÿÿÿ8ê €Ù1
+L	java:S106 "+Replace this use of System.out by a logger.(‹µ‹¶ıÿÿÿÿ8ê €Ù1
+o
+java:S3776)"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Çµí‘8¡Œ¸úÚ1
+L	java:S1060"+Replace this use of System.out by a logger.(¦¬¼şÿÿÿÿ8¢Œ¸úÚ1
+T
+java:S61260"2Replace this String concatenation with Text block.(¦¬¼şÿÿÿÿ8¢Œ¸úÚ1
+L	java:S106;"+Replace this use of System.out by a logger.(¹ÿÿúıÿÿÿÿ8¢Œ¸úÚ1
+L	java:S106="+Replace this use of System.out by a logger.(§Ü›¥ùÿÿÿÿ8¢Œ¸úÚ1
+L	java:S106D"+Replace this use of System.out by a logger.(‹¶¯ÿøÿÿÿÿ8£Œ¸úÚ1
+G	java:S106H"+Replace this use of System.out by a logger.(†¦ğğ8£Œ¸úÚ1
+L	java:S106L"+Replace this use of System.out by a logger.(½û¶ëùÿÿÿÿ8£Œ¸úÚ1
+G	java:S106P"+Replace this use of System.out by a logger.(¿»›8¤Œ¸úÚ1
+L	java:S106R"+Replace this use of System.out by a logger.(ûÑ–®ıÿÿÿÿ8¤Œ¸úÚ1
+G	java:S106V"+Replace this use of System.out by a logger.(×ÂıÔ8¤Œ¸úÚ1
+O
+java:S6126V"2Replace this String concatenation with Text block.(×ÂıÔ8¤Œ¸úÚ1
+L	java:S106]"+Replace this use of System.out by a logger.(éı¬Óøÿÿÿÿ8¤Œ¸úÚ1
+T
+java:S6126]"2Replace this String concatenation with Text block.(éı¬Óøÿÿÿÿ8¤Œ¸úÚ1

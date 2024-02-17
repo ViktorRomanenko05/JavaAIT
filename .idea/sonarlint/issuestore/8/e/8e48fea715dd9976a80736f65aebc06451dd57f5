@@ -1,0 +1,29 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(Çµí‘8Ñà’úÚ1
+F
+java:S2140	")Use "java.util.Random.nextInt()" instead.(åöàí8Óà’úÚ1
+G	java:S106"+Replace this use of System.out by a logger.(ê¦™8Óà’úÚ1
+F	java:S106"+Replace this use of System.out by a logger.(ñû²8Ôà’úÚ1
+N
+java:S6126"2Replace this String concatenation with Text block.(ñû²8Ôà’úÚ1
+L	java:S106"+Replace this use of System.out by a logger.(ÌŠœ£üÿÿÿÿ8×à’úÚ1
+G	java:S106""+Replace this use of System.out by a logger.(£‰Ó8Øà’úÚ1
+D
+java:S1125*"'Remove the unnecessary boolean literal.(ö‚¡ç8Øà’úÚ1
+G	java:S106+"+Replace this use of System.out by a logger.(Ğ¬Ö¡8Øà’úÚ1
+D
+java:S1125,"'Remove the unnecessary boolean literal.(õºüì8Ùà’úÚ1
+F	java:S106-"+Replace this use of System.out by a logger.(ÕÔ€8Ùà’úÚ1
+G	java:S1062"+Replace this use of System.out by a logger.(”»8Ùà’úÚ1
+G	java:S1066"+Replace this use of System.out by a logger.(¯ğ‡š8Ùà’úÚ1
+G	java:S1067"+Replace this use of System.out by a logger.(Ù÷Æ8Úà’úÚ1
+G	java:S106="+Replace this use of System.out by a logger.(æ®Ê 8Úà’úÚ1
+L	java:S106?"+Replace this use of System.out by a logger.(–âË¹úÿÿÿÿ8Úà’úÚ1
+T
+java:S6126?"2Replace this String concatenation with Text block.(–âË¹úÿÿÿÿ8Úà’úÚ1
+F	java:S106D"+Replace this use of System.out by a logger.(ö‹â~8Ûà’úÚ1
+G	java:S106I"+Replace this use of System.out by a logger.(£‰Ó8Üà’úÚ1
+L	java:S106O"+Replace this use of System.out by a logger.(ÕÎª†şÿÿÿÿ8Üà’úÚ1
+L	java:S106U"+Replace this use of System.out by a logger.(‚ò¹Ûùÿÿÿÿ8İà’úÚ1
+G	java:S106W"+Replace this use of System.out by a logger.(Ñ·–ˆ8İà’úÚ1

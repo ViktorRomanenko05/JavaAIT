@@ -1,0 +1,19 @@
+
+d
+java:S2184"BCast one of the operands of this addition operation to a "double".(«Ğèÿÿÿÿÿ8–¦ÈØ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğœ‹ûÿÿÿÿ8ì®»Ø1
+G	java:S106	"+Replace this use of System.out by a logger.(­×€Ç8ó®»Ø1
+L	java:S106"+Replace this use of System.out by a logger.(İ£ß“úÿÿÿÿ8ó®»Ø1
+G	java:S106"+Replace this use of System.out by a logger.(á­â8ó®»Ø1
+G	java:S106"+Replace this use of System.out by a logger.(çÅË8ó®»Ø1
+L	java:S106"+Replace this use of System.out by a logger.(† †ƒûÿÿÿÿ8ô®»Ø1
+G	java:S106"+Replace this use of System.out by a logger.(â«¼8ô®»Ø1
+G	java:S106"+Replace this use of System.out by a logger.(…­ÑÇ8ô®»Ø1
+F	java:S106""+Replace this use of System.out by a logger.(ÿÕÈS8ô®»Ø1
+G	java:S106&"+Replace this use of System.out by a logger.(üÙ¤„8ô®»Ø1
+L	java:S106("+Replace this use of System.out by a logger.(ßñµÅøÿÿÿÿ8ô®»Ø1
+>
+java:S1116("Remove this empty statement.(ßñµÅøÿÿÿÿ8õ®»Ø1
+L	java:S106*"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8õ®»Ø1
+Q
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8Š”ÆØ1

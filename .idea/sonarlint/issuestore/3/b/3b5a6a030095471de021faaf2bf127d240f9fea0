@@ -1,0 +1,29 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¿‡ÇÎ8ÌëÛ°Û1
+T
+java:S2589;"7Remove this expression which always evaluates to "true"(µ…­ã8Š÷‰±Û1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Çµí‘8ÑëÛ°Û1
+L
+java:S1481"*Remove this unused "cycle" local variable.(—»ü¡ùÿÿÿÿ8ÒëÛ°Û1
+Q
+java:S1481"/Remove this unused "counterTwo" local variable.(ØÔĞ¸ùÿÿÿÿ8Œ÷‰±Û1
+J
+java:S1481".Remove this unused "numberOne" local variable.(Ëÿ¶^8Œ÷‰±Û1
+P
+java:S1481".Remove this unused "numberTwo" local variable.(ôÀÛşÿÿÿÿ8Œ÷‰±Û1
+M
+java:S1481"+Remove this unused "result" local variable.(›¡Ã ıÿÿÿÿ8Œ÷‰±Û1
+O
+java:S1481"2Remove this unused "validInputOne" local variable.(í¼íû8Œ÷‰±Û1
+O
+java:S1481"2Remove this unused "validInputTwo" local variable.(¾ğá8Œ÷‰±Û1
+L	java:S106"+Replace this use of System.out by a logger.(¦¬¼şÿÿÿÿ8÷‰±Û1
+T
+java:S6126"2Replace this String concatenation with Text block.(¦¬¼şÿÿÿÿ8÷‰±Û1
+L	java:S106'"+Replace this use of System.out by a logger.(¹ÿÿúıÿÿÿÿ8÷‰±Û1
+G	java:S106*"+Replace this use of System.out by a logger.(“ÑËî8÷‰±Û1
+L	java:S106/"+Replace this use of System.out by a logger.(Ó½á›üÿÿÿÿ8÷‰±Û1
+G	java:S1064"+Replace this use of System.out by a logger.(ÿ¾ØŒ8÷‰±Û1
+G	java:S106<"+Replace this use of System.out by a logger.(Æ¿û›8÷‰±Û1
+G	java:S106>"+Replace this use of System.out by a logger.(”ãß8÷‰±Û1

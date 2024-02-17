@@ -1,0 +1,20 @@
+
+{
+java:S1192?"YDefine a constant instead of duplicating this literal "Ğ¸Ğ· Ğ½Ğ¸Ñ… Ğ½Ğ°Ğ»Ğ¾Ğ³: " 3 times.(’ä÷×üÿÿÿÿ8ĞµÚŠ×1
+G	java:S106"+Replace this use of System.out by a logger.(ª†×8ÛµÚŠ×1
+O
+java:S6126"2Replace this String concatenation with Text block.(ª†×8ÛµÚŠ×1
+L	java:S106"+Replace this use of System.out by a logger.(±öø¾úÿÿÿÿ8İµÚŠ×1
+G	java:S106"+Replace this use of System.out by a logger.(¯’ŒÄ8İµÚŠ×1
+L	java:S106"+Replace this use of System.out by a logger.(³áĞêşÿÿÿÿ8İµÚŠ×1
+I
+java:S11254"'Remove the unnecessary boolean literal.(â¸Ššûÿÿÿÿ8÷ÂÈúÚ1
+L	java:S106>"+Replace this use of System.out by a logger.(…Í‚–üÿÿÿÿ8ŞµÚŠ×1
+L	java:S106?"+Replace this use of System.out by a logger.(’ä÷×üÿÿÿÿ8ŞµÚŠ×1
+L	java:S106@"+Replace this use of System.out by a logger.(ÆÇÒÙÿÿÿÿÿ8ŞµÚŠ×1
+L	java:S106A"+Replace this use of System.out by a logger.(Ñå–¯ıÿÿÿÿ8ŞµÚŠ×1
+L	java:S106B"+Replace this use of System.out by a logger.(÷èßèÿÿÿÿÿ8ŞµÚŠ×1
+L	java:S106C"+Replace this use of System.out by a logger.(äĞÑÿÿÿÿÿ8ßµÚŠ×1
+F	java:S106D"+Replace this use of System.out by a logger.(á‰Êu8ßµÚŠ×1
+G	java:S106E"+Replace this use of System.out by a logger.(óÔûğ8ßµÚŠ×1
+G	java:S106F"+Replace this use of System.out by a logger.(¼«“±8ßµÚŠ×1

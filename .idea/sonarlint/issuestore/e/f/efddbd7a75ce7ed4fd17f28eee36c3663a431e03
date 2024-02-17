@@ -1,0 +1,33 @@
+
+o
+java:S3776+"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Çµí‘8ÊÊ Û1
+Y
+java:S1854["7Remove this useless assignment to local variable "win".(×ŸÉåşÿÿÿÿ8ŸÊÊ Û1
+E
+java:S14813"(Remove this unused "win" local variable.(¿Õ™§8ŸÊÊ Û1
+L	java:S1066"+Replace this use of System.out by a logger.(âéÀ¹ıÿÿÿÿ8¡ÊÊ Û1
+F
+java:S2140;")Use "java.util.Random.nextInt()" instead.(ˆ”ˆ8¢ÊÊ Û1
+F	java:S106="+Replace this use of System.out by a logger.(ñû²8¢ÊÊ Û1
+N
+java:S6126="2Replace this String concatenation with Text block.(ñû²8¢ÊÊ Û1
+G	java:S106H"+Replace this use of System.out by a logger.(¤·è·8¢ÊÊ Û1
+G	java:S106M"+Replace this use of System.out by a logger.(£‰Ó8£ÊÊ Û1
+G	java:S106T"+Replace this use of System.out by a logger.(¯å³Â8£ÊÊ Û1
+G	java:S106U"+Replace this use of System.out by a logger.(³øê8£ÊÊ Û1
+L	java:S106W"+Replace this use of System.out by a logger.(Èø³õşÿÿÿÿ8£ÊÊ Û1
+G	java:S106X"+Replace this use of System.out by a logger.(³øê8¤ÊÊ Û1
+L	java:S106Z"+Replace this use of System.out by a logger.(¸Â¹÷ûÿÿÿÿ8¤ÊÊ Û1
+F	java:S106a"+Replace this use of System.out by a logger.(©‘E8¤ÊÊ Û1
+N
+java:S6126a"2Replace this String concatenation with Text block.(©‘E8¤ÊÊ Û1
+G	java:S106d"+Replace this use of System.out by a logger.(šàùÙ8¤ÊÊ Û1
+O
+java:S6126d"2Replace this String concatenation with Text block.(šàùÙ8¤ÊÊ Û1
+L	java:S106l"+Replace this use of System.out by a logger.(ÜÒî¾üÿÿÿÿ8¤ÊÊ Û1
+L	java:S106q"+Replace this use of System.out by a logger.(Å—¦Óûÿÿÿÿ8¥ÊÊ Û1
+G	java:S106w"+Replace this use of System.out by a logger.(ª©›Ï8¥ÊÊ Û1
+F	java:S106}"+Replace this use of System.out by a logger.(’8¥ÊÊ Û1
+L	java:S106"+Replace this use of System.out by a logger.(´àŠõúÿÿÿÿ8¥ÊÊ Û1
+T
+java:S6126"2Replace this String concatenation with Text block.(´àŠõúÿÿÿÿ8¥ÊÊ Û1

@@ -1,0 +1,22 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ηµν‘8ςε¥Ψ1
+G	java:S106"+Replace this use of System.out by a logger.(χ¦ώΑ8υε¥Ψ1
+L	java:S106"+Replace this use of System.out by a logger.(ΒΌτρώÿÿÿÿ8υε¥Ψ1
+T
+java:S6126"2Replace this String concatenation with Text block.(ΒΌτρώÿÿÿÿ8υε¥Ψ1
+G	java:S106""+Replace this use of System.out by a logger.(•ν8υε¥Ψ1
+O
+java:S6126""2Replace this String concatenation with Text block.(•ν8φε¥Ψ1
+L	java:S106("+Replace this use of System.out by a logger.(Ò­ωÿÿÿÿ8φε¥Ψ1
+T
+java:S6126("2Replace this String concatenation with Text block.(Ò­ωÿÿÿÿ8φε¥Ψ1
+L	java:S106A"+Replace this use of System.out by a logger.(Ò—ϊ­ÿÿÿÿÿ8ψε¥Ψ1
+T
+java:S6126A"2Replace this String concatenation with Text block.(Ò—ϊ­ÿÿÿÿÿ8ψε¥Ψ1
+L	java:S106C"+Replace this use of System.out by a logger.(ΪΝ ÿÿÿÿÿ8ψε¥Ψ1
+L	java:S106H"+Replace this use of System.out by a logger.(ξΏζ¥ύÿÿÿÿ8ψε¥Ψ1
+G	java:S106J"+Replace this use of System.out by a logger.(όκηχ8ψε¥Ψ1
+L	java:S106M"+Replace this use of System.out by a logger.(Ύί―ύÿÿÿÿ8ψε¥Ψ1
+T
+java:S6126M"2Replace this String concatenation with Text block.(Ύί―ύÿÿÿÿ8ωε¥Ψ1
