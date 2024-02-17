@@ -9,6 +9,8 @@ public class Task01 {
         int cycle = 1;
         double result;
 
+        Scanner scanner = new Scanner(System.in);
+
         while (cycle == 1) {
             System.out.println("\nПожалуйста, выберите тип необходимой операции.\n" +
                     "Введите соответствующий номер:\n\n" +
@@ -17,7 +19,7 @@ public class Task01 {
                     "3 - УМНОЖЕНИЕ\n" +
                     "4 - ДЕЛЕНИЕ\n");
 
-            Scanner scanner = new Scanner(System.in);
+
             operation = scanner.nextInt();
 
             if (operation < 1 || operation > 4)
