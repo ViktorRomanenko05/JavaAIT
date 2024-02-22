@@ -6,10 +6,6 @@ public class Task01 {
 
     public static void main(String[] args) {
 
-        String manufacturer;
-        String country;
-        String choice = "1";
-
         String toyotaHistory = getToyota();
         String toyota9000 = ToyotaPer1();
         String toyota0010 = ToyotaPer2();
@@ -30,14 +26,17 @@ public class Task01 {
         String kia0010 = KiaPer2();
         String kia1024 = KiaPer3();
 
-        int range = 0;
-        int year = 0;
+        String choice = "1";
 
         Scanner scanner = new Scanner(System.in);
 
         do {
 
             boolean validInput = false;
+            int range = 0;
+            int year = 0;
+            String manufacturer;
+            String country;
 
             System.out.println("Здравствуйте!\n" +
                     "В данной программе собрана краткая история 4 автомобильных брендов,\n" +
