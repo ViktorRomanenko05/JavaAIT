@@ -16,7 +16,7 @@ public class MainForStringProcessor {
         do {
 
             System.out.println("Введите слово");
-            word = scanner.next().toLowerCase().trim();
+            word = scanner.nextLine().toLowerCase().trim();
 
             reverse = StringProcessor.reverseString(word);
 
@@ -30,9 +30,9 @@ public class MainForStringProcessor {
             System.out.println("\nДля продолжения работы введите 1,\n" +
                     "для завершения - любое другое значение");
 
-            choice = scanner.next().trim();
+            choice = scanner.nextLine();
 
-        } while (choice == "1");
+        } while (choice.equals("1"));
 
     }
 
