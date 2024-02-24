@@ -33,6 +33,7 @@ public class MainForStringProcessor {
             choice = scanner.nextLine();
 
         } while (choice.equals("1"));
+          scanner.close();
 
     }
 
