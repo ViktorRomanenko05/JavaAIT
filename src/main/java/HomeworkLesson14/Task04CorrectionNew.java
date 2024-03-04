@@ -47,13 +47,12 @@ public class Task04CorrectionNew {
                 System.out.println("Пожалуйста, введите новое хобби № " + counter);
                 newHobby[hobby.length + i] = scanner.nextLine();
             }
-            scanner.close();
 
             System.out.println("Обновленный список хобби:\n");
 
             for (String hobbyName : newHobby) {
                 System.out.println(hobbyName);
             }
-        }
+        }scanner.close();
     }
 }
