@@ -32,21 +32,28 @@ public class Task04CorrectionNew {
         newHobbyQuantity = scanner.nextInt();
         scanner.nextLine();
 
-        String[] newHobby = new String[newHobbyQuantity + hobby.length];
-
-        System.arraycopy(hobby, 0, newHobby, 0, hobby.length);
-
-        for (int i = 0; i < newHobbyQuantity; i++) {
-            counter++;
-            System.out.println("Пожалуйста, введите новое хобби № " + counter);
-            newHobby[hobby.length + i] = scanner.nextLine();
+        if (newHobbyQuantity<0){
+            System.out.println("Вы ввели не верное значение");
         }
-        scanner.close();
 
-        System.out.println("Обновленный список хобби:\n");
+        else {
 
-        for (String hobbyName : newHobby) {
-            System.out.println(hobbyName);
+            String[] newHobby = new String[newHobbyQuantity + hobby.length];
+
+            System.arraycopy(hobby, 0, newHobby, 0, hobby.length);
+
+            for (int i = 0; i < newHobbyQuantity; i++) {
+                counter++;
+                System.out.println("Пожалуйста, введите новое хобби № " + counter);
+                newHobby[hobby.length + i] = scanner.nextLine();
+            }
+            scanner.close();
+
+            System.out.println("Обновленный список хобби:\n");
+
+            for (String hobbyName : newHobby) {
+                System.out.println(hobbyName);
+            }
         }
     }
 }
