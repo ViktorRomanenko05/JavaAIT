@@ -5,18 +5,20 @@ package HomeworkLesson14;
 Напишите программу, которая выводит хобби и их рейтинги в виде списка.
  */
 
-public class Task05 {
+public class Task05Correction {
 
     public static void main(String[] args) {
 
-        int [] hobbyRating = new int [5];
+        String [] hobby = {"велоспорт", "футбол", "рисование", "программирование", "рыбалка"};
+
+        int [] hobbyRating = new int [hobby.length];
 
         System.out.println("\nРейтинг ваших хобби от 1 до 10:\n");
-        for (int i=0; i<5; i++ ){
+        for (int i=0; i< hobby.length; i++ ){
 
-            hobbyRating [i]=(int) (Math.random()*11);
+            hobbyRating [i]=(int) (Math.random()*10+1);
 
-            System.out.println("Хобби: " + Task01.hobby[i] + ", рейтинг: " + hobbyRating [i]);
+            System.out.println("Хобби: " + hobby[i] + ", рейтинг: " + hobbyRating [i]);
         }
     }
 }

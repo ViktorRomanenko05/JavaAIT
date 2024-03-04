@@ -16,7 +16,7 @@ public class Task04Correction {
 
             System.out.println("Введите название хобби для добавления:");
             String yourHobby = scanner.nextLine().toLowerCase().trim();
-
+            scanner.close();
 
             String[] hobbyBig = new String[Task01.hobby.length + 1];
 
