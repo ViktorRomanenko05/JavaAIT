@@ -9,7 +9,7 @@ public class Methods {
         Integer resultAdd = sumNumbers();
 
         System.out.println("\n______________________");
-        System.out.println("Первый метод:");
+        System.out.println("Метод для сложения:");
         System.out.println("\n1. Без входящих аргументов:");
 
         System.out.println(resultAdd != null? "Сумма введенных чисел равна " + resultAdd :
@@ -19,7 +19,7 @@ public class Methods {
         System.out.println("Результат:" + sumNumbers(3, 2, 11, -8, 41));
 
         System.out.println("\n______________________");
-        System.out.println("Второй метод:");
+        System.out.println("Метод для статистики:");
         System.out.println("\n1. Без входящих аргументов:");
                            statistic();
 
