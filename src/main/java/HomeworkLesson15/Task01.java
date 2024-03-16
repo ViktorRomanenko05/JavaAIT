@@ -43,7 +43,7 @@ public class Task01 {
 
     public static void main(String[] args) {
 
-        System.out.println("\nВведите название животного для поиска:");
+        System.out.println("\nВведите название вашего животного для поиска:");
         String animal = scanner.next().trim();
         scanner.close();
 
