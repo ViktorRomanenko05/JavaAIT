@@ -1,4 +1,4 @@
-package HomeworkLesson16;
+package homeworkLesson16;
 
 import java.util.Arrays;
 
@@ -37,9 +37,7 @@ public class Methods {
     помимо строки с сообщением об ошибке выводится сумма равная 0.
 
     Я посчитал это не совсем корректным, но другого варианта кроме как
-    использовать Integer вместо int не нашел. Это добавляет особенности если потребуется
-    дальнейшее масштабирование программы, но в данном случае по моему мнению является
-    приемлимым вариантом.
+    использовать Integer вместо int не нашел.
      */
     public static Integer  sumNumbers (Integer... numbersInput){
 
