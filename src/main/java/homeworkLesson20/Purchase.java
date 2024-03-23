@@ -73,7 +73,7 @@ public class Purchase {
             }
         }
         if (!found) {
-            System.out.println("Введенного товара нет в списке");
+            System.out.println("Товара с наименованием " + item + " нет в списке");
         }
     }
 
@@ -96,7 +96,7 @@ public class Purchase {
             }
         }
         if (!foundToDel) {
-            System.out.println("Товара с названием " + itemDel + " нет в списке");
+            System.out.println("Товара с наименованием " + itemDel + " нет в списке");
         }
     }
 
