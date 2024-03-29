@@ -1,5 +1,5 @@
 package homeworkLesson20;
-
+/*
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -39,5 +39,11 @@ public class TestPurchase {
         System.out.println("\n Обновленный список товаров: \n");
 
         Purchase.printer(purchases); //контрольный вывод списка после удаления элементов
+
+        Purchase.removePurchaseByNameIterator(purchases, purchaseTwo);
         }
+
+
     }
+
+ */

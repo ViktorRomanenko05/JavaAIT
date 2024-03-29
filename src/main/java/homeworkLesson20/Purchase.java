@@ -1,5 +1,4 @@
 package homeworkLesson20;
-
 /*
 1. Создание списка покупок:
 a. Создайте класс Purchase с полями itemName (название товара) и price (цена товара).
@@ -20,9 +19,9 @@ b. Проверьте работу метода, вызвав его для по
 5. Удаление покупок:
 a. Напишите метод для удаления покупки по её названию.
 b. Проверьте работу метода, удалив одну из покупок и выведя список покупок снова.
- */
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 
 public class Purchase {
@@ -104,4 +103,21 @@ public class Purchase {
     public static void line() {
         System.out.println("----------------------------------");
     }
+
+    public static void removePurchaseByNameIterator(ArrayList<Purchase> purchasesList, Purchase purchaseToDelete){
+        Iterator<Purchase> iterator = purchasesList.iterator();
+        while (iterator.hasNext()){
+            Purchase purchase = iterator.next();
+            if(purchase.equals(purchaseToDelete)){
+                iterator.remove();
+                System.out.println("Покупка найдена и удалена");
+            }
+        }
+    }
+    Comparator<Purchase> preisComparator = Comparator.comparingDouble(purchase -> purchase.getPrice());
+    Comparator<Purchase> preisComparator1 = Comparator.comparingDouble(Purchase::getPrice);
+
 }
+
+
+*/
