@@ -81,7 +81,7 @@ public class TestProperty {
         HashSet<Property> filteredByType;
         filteredByType = Property.filter(propertyHashSet, propertyType);
 
-        //если метод возвращает null
+        //если метод возвращает пустое хранилище
         if (filteredByType.isEmpty()) {
             System.out.println("Нет объектов для отображения");
         } else {

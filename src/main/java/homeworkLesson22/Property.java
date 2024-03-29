@@ -60,8 +60,8 @@ public class Property {
     //Метод для фильтрации недвижимости по типу
     public static HashSet<Property> filter(HashSet<Property> propertyHashSet, String objectType) {
         HashSet<Property> filtered = new HashSet<>();
-
         boolean found = false;
+
         for (Property property : propertyHashSet) {
             if (property.getType().equalsIgnoreCase(objectType)) {
                 filtered.add(property);
