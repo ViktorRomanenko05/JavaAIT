@@ -76,7 +76,7 @@ public class TestProperty {
         System.out.println("\nВведите интересующий тип недвижимости:\n" +
                 "House, Flat, либо Commercial");
 
-        String propertyType = scanner.nextLine();
+        String propertyType = scanner.nextLine().trim();
         scanner.close();
         HashSet <Property> filteredByType = new HashSet<>();
         filteredByType = Property.filter(propertyHashSet,propertyType);
