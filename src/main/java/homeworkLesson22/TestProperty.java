@@ -16,20 +16,21 @@ public class TestProperty {
         Faker faker = new Faker();
 
         //Список возможных типов недвижимости (для фейкера)
-        String [] propertyTypes = {"Flat", "House", "Commercial"};
+        String[] propertyTypes = {"Flat", "House", "Commercial"};
 
         /*
         Вносим объекты недвижимости.
 
         Принято решение о раздельном заполнении полей адреса, так как при ручном вводе
         пользователем может возникнуть большое количество комбинаций ввода, что затруднит
-        обработку и увеличит вероятность некорректной обработки данных
+        обработку и увеличит вероятность некорректной обработки данных.
          */
 
-        for (int i=0; i<10; i++) {
+        for (int i = 0; i < 10; i++) {
 
             //Выбираем тип недвижимости из списка выше с помощью "Фейкера"
             String propertyType = propertyTypes[faker.random().nextInt(propertyTypes.length)];
+
             //Генерируем параметры для заполнения полей адреса
             int zipCode = faker.random().nextInt(10000, 99999); // фейкер генерирует индекс как String, поэтому такой способ
             String city = faker.address().city();
@@ -47,11 +48,11 @@ public class TestProperty {
         получим из сгенерированного фейкером списка с помощью написанного метода getProperties
          */
 
-        Property object1 = new Property("München","Hauptstraße", 65,54786,"House");
-        Property object2 = new Property("Essen","Schulstraße", 134,85188,"House");
-        Property object3 = new Property("Berlin","Uferstraße", 37,37951,"Commercial");
-        Property object4 = new Property("Stuttgart","Zentralstraße", 272,59851,"Flat");
-        Property object5 = new Property("Hamburg","Waldstraße", 89,36491,"Commercial");
+        Property object1 = new Property("München", "Hauptstraße", 65, 54786, "House");
+        Property object2 = new Property("Essen", "Schulstraße", 134, 85188, "House");
+        Property object3 = new Property("Berlin", "Uferstraße", 37, 37951, "Commercial");
+        Property object4 = new Property("Stuttgart", "Zentralstraße", 272, 59851, "Flat");
+        Property object5 = new Property("Hamburg", "Waldstraße", 89, 36491, "Commercial");
         Property object6 = Property.getProperties(propertyHashSet, 0);
         Property object7 = Property.getProperties(propertyHashSet, 3);
         Property object8 = Property.getProperties(propertyHashSet, 5);
@@ -77,13 +78,13 @@ public class TestProperty {
 
         String propertyType = scanner.nextLine().trim();
         scanner.close();
-        HashSet <Property> filteredByType;
-        filteredByType = Property.filter(propertyHashSet,propertyType);
+        HashSet<Property> filteredByType;
+        filteredByType = Property.filter(propertyHashSet, propertyType);
+
         //если метод возвращает null
-        if (filteredByType.isEmpty()){
+        if (filteredByType.isEmpty()) {
             System.out.println("Нет объектов для отображения");
-        }
-        else {
+        } else {
             //Выводим результат работы метода фильтрации
             Property.printer(filteredByType);
         }
@@ -115,8 +116,8 @@ public class TestProperty {
         System.out.println("\nОбъекты из хранилища №2");
         Property.printer(propertyHashSet1);
 
+        //Выводим результат работы метода на экран
         System.out.println("\nУникальные объекты, содержащиеся в первом хранилище");
-
         Property.printer(difference);
     }
 }

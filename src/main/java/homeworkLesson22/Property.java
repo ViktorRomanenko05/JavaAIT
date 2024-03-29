@@ -58,24 +58,24 @@ public class Property {
     }
 
     //Метод для фильтрации недвижимости по типу
-    public static HashSet <Property> filter (HashSet<Property>propertyHashSet, String objectType){
-        HashSet <Property> filtered = new HashSet<>();
+    public static HashSet<Property> filter(HashSet<Property> propertyHashSet, String objectType) {
+        HashSet<Property> filtered = new HashSet<>();
 
         boolean found = false;
-        for (Property property : propertyHashSet){
-            if (property.getType().equalsIgnoreCase(objectType)){
+        for (Property property : propertyHashSet) {
+            if (property.getType().equalsIgnoreCase(objectType)) {
                 filtered.add(property);
                 found = true;
             }
         }
-        if (!found){
+        if (!found) {
             System.out.println("Требуемого типа недвижимости нет всписке");
         }
         return filtered;
     }
 
     //Метод для определения уникальных элементов в первом массиве
-    public static HashSet <Property> compareSets (HashSet<Property> propertyHashSet1, HashSet<Property> propertyHashSet2){
+    public static HashSet<Property> compareSets(HashSet<Property> propertyHashSet1, HashSet<Property> propertyHashSet2) {
         HashSet<Property> difference = new HashSet<>(propertyHashSet1);
         difference.removeAll(propertyHashSet2);
         return difference;
@@ -84,25 +84,25 @@ public class Property {
     //Метод для вывода данных на экран
     public static void printer(HashSet<Property> propertyHashSet) {
 
-            line();
-            System.out.printf("%-3s %-12s %-7s %-22s %-20s %s%n", "№", "Тип", "Индекс", "Город", "Улица", "№ дома");
-            line();
-            int counterNum = 0;
-            for (Property property : propertyHashSet) {
-                counterNum++;
-                System.out.printf("%-3s %-12s %-7s %-22s %-20s %s%n", counterNum, property.getType(), property.getZipCode(), property.getCity(), property.getStreet(), property.getHouseNumber());
-            }
-            line();
+        line();
+        System.out.printf("%-3s %-12s %-7s %-22s %-20s %s%n", "№", "Тип", "Индекс", "Город", "Улица", "№ дома");
+        line();
+        int counterNum = 0;
+        for (Property property : propertyHashSet) {
+            counterNum++;
+            System.out.printf("%-3s %-12s %-7s %-22s %-20s %s%n", counterNum, property.getType(), property.getZipCode(), property.getCity(), property.getStreet(), property.getHouseNumber());
+        }
+        line();
     }
 
     //Метод для копирования из первого hashSet объектов (т. к. он заполняется фейкером)
-    public static Property getProperties(HashSet<Property>propertyHashSet, int numberInList){
+    public static Property getProperties(HashSet<Property> propertyHashSet, int numberInList) {
 
-        int position =0;
+        int position = 0;
         boolean found = false;
-        for (Property object : propertyHashSet){
-            if (position == numberInList){
-                return  object;
+        for (Property object : propertyHashSet) {
+            if (position == numberInList) {
+                return object;
             }
             position++;
         }
