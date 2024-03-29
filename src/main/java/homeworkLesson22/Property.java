@@ -83,15 +83,16 @@ public class Property {
 
     //Метод для вывода данных на экран
     public static void printer(HashSet<Property> propertyHashSet) {
-        line();
-        System.out.printf("%-3s %-12s %-7s %-22s %-20s %s%n", "№", "Тип", "Индекс", "Город", "Улица", "№ дома");
-        line();
-        int counterNum = 0;
-        for (Property property : propertyHashSet) {
-            counterNum++;
-            System.out.printf("%-3s %-12s %-7s %-22s %-20s %s%n", counterNum, property.getType(), property.getZipCode(), property.getCity(), property.getStreet(),property.getHouseNumber());
-        }
-        line();
+
+            line();
+            System.out.printf("%-3s %-12s %-7s %-22s %-20s %s%n", "№", "Тип", "Индекс", "Город", "Улица", "№ дома");
+            line();
+            int counterNum = 0;
+            for (Property property : propertyHashSet) {
+                counterNum++;
+                System.out.printf("%-3s %-12s %-7s %-22s %-20s %s%n", counterNum, property.getType(), property.getZipCode(), property.getCity(), property.getStreet(), property.getHouseNumber());
+            }
+            line();
     }
 
     //Метод для копирования из первого hashSet объектов (т. к. он заполняется фейкером)

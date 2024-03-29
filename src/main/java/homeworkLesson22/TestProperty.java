@@ -1,7 +1,6 @@
 package homeworkLesson22;
 
 import java.util.HashSet;
-import java.util.Properties;
 import java.util.Scanner;
 
 import com.github.javafaker.Faker;
@@ -78,11 +77,16 @@ public class TestProperty {
 
         String propertyType = scanner.nextLine().trim();
         scanner.close();
-        HashSet <Property> filteredByType = new HashSet<>();
+        HashSet <Property> filteredByType;
         filteredByType = Property.filter(propertyHashSet,propertyType);
-
-        //Выводим результат работы метода фильтрации
-        Property.printer(filteredByType);
+        //если метод возвращает null
+        if (filteredByType.isEmpty()){
+            System.out.println("Нет объектов для отображения");
+        }
+        else {
+            //Выводим результат работы метода фильтрации
+            Property.printer(filteredByType);
+        }
 
         /*ЗАДАНИЕ 3
         Сравнение содержимого двух HashSet
