@@ -77,6 +77,7 @@ public class TestProperty {
                 "House, Flat, либо Commercial");
 
         String propertyType = scanner.nextLine();
+        scanner.close();
         HashSet <Property> filteredByType = new HashSet<>();
         filteredByType = Property.filter(propertyHashSet,propertyType);
 
@@ -106,7 +107,11 @@ public class TestProperty {
         //Вызываем метод для сравнения хранилищ HashSet и выводим полученные данные на экран:
         HashSet<Property> difference = Property.compareSets(propertyHashSet, propertyHashSet1);
 
-        System.out.println("\nУникальные объекты, содержащиеся в первом списке:\n");
+        //Для наглядности выведем на экран объекты из второго хранилища:
+        System.out.println("\nОбъекты из хранилища №2");
+        Property.printer(propertyHashSet1);
+
+        System.out.println("\nУникальные объекты, содержащиеся в первом хранилище");
 
         Property.printer(difference);
     }
