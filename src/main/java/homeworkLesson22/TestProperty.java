@@ -8,12 +8,11 @@ import com.github.javafaker.Faker;
 public class TestProperty {
 
     static Scanner scanner = new Scanner(System.in);
+    static Faker faker = new Faker();
 
     public static void main(String[] args) {
 
         HashSet<Property> propertyHashSet = new HashSet<>();
-
-        Faker faker = new Faker();
 
         //Список возможных типов недвижимости (для фейкера)
         String[] propertyTypes = {"Flat", "House", "Commercial"};
@@ -41,6 +40,7 @@ public class TestProperty {
         }
 
         //Выводим результат на экран
+        System.out.println("\nСодержимое хранилища №1 (propertyHashSet)");
         Property.printer(propertyHashSet);
 
         /*
@@ -113,7 +113,7 @@ public class TestProperty {
         HashSet<Property> difference = Property.compareSets(propertyHashSet, propertyHashSet1);
 
         //Для наглядности выведем на экран объекты из второго хранилища:
-        System.out.println("\nОбъекты из хранилища №2");
+        System.out.println("\nОбъекты из хранилища №2 (propertyHashSet1)");
         Property.printer(propertyHashSet1);
 
         //Выводим результат работы метода на экран
