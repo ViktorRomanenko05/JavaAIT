@@ -101,6 +101,7 @@ public class SocialNetwork {
         }
     }
 
+    //Метод для добавления сообщения в сообщество
     public static void addMessageToCommunity(Community community, User sender, Message message) {
         if (community == null || sender == null || message == null) {
             System.out.println("Incorrect data. Object is null");
@@ -115,13 +116,14 @@ public class SocialNetwork {
         }
     }
 
+    //Метод для удаления сообщения из сообщества
     public static void removeMessageFromCommunity(Community community, User sender, Message message) {
         if (community == null || sender == null || message == null) {
             System.out.println("Incorrect data. Object is null");
         } else {
             boolean result = community.getCommunityMessages().remove(message);
             if (result) {
-                sender.addMessage(message);
+                sender.removeMessage(message);
                 System.out.println("Message was deleted");
             } else {
                 System.out.println("Message was not found");
@@ -129,6 +131,7 @@ public class SocialNetwork {
         }
     }
 
+    //Вывод всех пользователей на экран
     public static void printAllUsers() {
         line();
         System.out.printf("%-3s %-4s %s%n", "№", "User ID", "User name");
@@ -141,6 +144,7 @@ public class SocialNetwork {
         line();
     }
 
+    //Вывод всех сообществ на экран
     public static void printAllCommunities() {
         line();
         System.out.printf("%-3s %s%n", "№", "Community name");
@@ -153,6 +157,7 @@ public class SocialNetwork {
         line();
     }
 
+    //Вывод на экран всех сообщений в сообществе
     public static void printAllCommunityMessages(Community community) {
         line();
         System.out.printf("%-3s %-30s %-20s %s%n", "№", "Message", "Sender", "Sent Time");
@@ -166,6 +171,7 @@ public class SocialNetwork {
         line();
     }
 
+    //Вывод на экран лайков для переданного в метод сообщения
     public static void printLikes(Message message) {
         line();
         System.out.println("Message: " + message.getMessage());
@@ -179,7 +185,7 @@ public class SocialNetwork {
         line();
     }
 
-
+    //Добавление лайка в сообщение
     public static void addLike (User like, Message message){
         if (like == null){
             System.out.println("Object user is null");
@@ -195,6 +201,7 @@ public class SocialNetwork {
         }
     }
 
+    //Удаление лайка из сообщения
     public void removeLike (User like, Message message){
         if (like == null){
             System.out.println("Object user is null");
@@ -210,6 +217,7 @@ public class SocialNetwork {
         }
     }
 
+    //Поиск пользователя по имени
     public static User findUserByName(String name) {
         for (User user : users.values()) {
             if (user.getName().equals(name)) {
@@ -221,6 +229,7 @@ public class SocialNetwork {
         return null;
     }
 
+    //Поиск сообщества по имени
     public static Community findCommunityByName(String communityName) {
         for (Community community : communities) {
             if (community.getCommunityName().equals(communityName)) {

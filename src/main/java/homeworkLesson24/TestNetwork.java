@@ -29,6 +29,7 @@ public class TestNetwork {
         User user8 = new User("Nathan Dubois", 8221, new HashSet<>(), new ArrayList<>());
         User user9 = new User("Ayaan Sharma", 9931, new HashSet<>(), new ArrayList<>());
         User user10 = new User("Emily Johnson", 1009, new HashSet<>(), new ArrayList<>());
+        User user11 = new User("Emily Johnson", 1009, new HashSet<>(), new ArrayList<>());
 
         SocialNetwork.addUser(user1);
         SocialNetwork.addUser(user2);
@@ -39,6 +40,7 @@ public class TestNetwork {
         SocialNetwork.addUser(user7);
         SocialNetwork.addUser(user8);
         SocialNetwork.addUser(user9);
+        SocialNetwork.addUser(user11);
         SocialNetwork.addUser(user10);
 
         System.out.println("\nВыводим на экран список добавленных пользователей\n");
