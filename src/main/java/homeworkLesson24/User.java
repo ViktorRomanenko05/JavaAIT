@@ -16,7 +16,7 @@ public class User {
 
     //Конструктор
 
-    public User(String name, int identifier, HashSet<User> friends, ArrayList<Message> messages) {
+    public User(String name, int identifier) {
         this.name = name;
         this.identifier = identifier;
         this.friends = new HashSet<>();

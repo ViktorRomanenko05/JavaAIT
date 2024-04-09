@@ -11,7 +11,7 @@ public class Message {
     private LocalDateTime sentTime = LocalDateTime.now();
     private HashSet <User> usersLike;
 
-    public Message(User sender, String message, LocalDateTime sentTime, HashSet<User> usersLike) {
+    public Message(User sender, String message, LocalDateTime sentTime) {
         this.sender = sender;
         this.message = message;
         this.sentTime = sentTime;

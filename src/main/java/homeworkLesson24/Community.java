@@ -11,7 +11,7 @@ public class Community {
 
     private ArrayList<Message> communityMessages;
 
-    public Community(String communityName, HashSet<User> communityMembers, ArrayList<Message> communityMessages) {
+    public Community(String communityName) {
         this.communityName = communityName;
         this.communityMembers = new HashSet<>();
         this.communityMessages = new ArrayList<>();
