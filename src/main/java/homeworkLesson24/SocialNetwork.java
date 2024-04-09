@@ -11,11 +11,6 @@ public class SocialNetwork {
     private static HashMap<Integer, User> users = new HashMap<>();
     private static HashSet<Community> communities = new HashSet<>();
 
-    public SocialNetwork(HashMap<Integer, User> users, HashSet<Community> communities) {
-        SocialNetwork.users = users;
-        SocialNetwork.communities = communities;
-    }
-
     public static HashMap<Integer, User> getUsers() {
         return users;
     }
@@ -134,12 +129,12 @@ public class SocialNetwork {
     //Вывод всех пользователей на экран
     public static void printAllUsers() {
         line();
-        System.out.printf("%-3s %-4s %s%n", "№", "User ID", "User name");
+        System.out.printf("%-3s %-8s %s%n", "№", "User ID", "User name");
         line();
         int counterNum = 0;
         for (User user : SocialNetwork.getUsers().values()) {
             counterNum++;
-            System.out.printf("%-3d %-4s %s%n", counterNum, user.getIdentifier(), user.getName());
+            System.out.printf("%-3d %-8s %s%n", counterNum, user.getIdentifier(), user.getName());
         }
         line();
     }
@@ -159,16 +154,16 @@ public class SocialNetwork {
 
     //Вывод на экран всех сообщений в сообществе
     public static void printAllCommunityMessages(Community community) {
-        line();
+        lineBig();
         System.out.printf("%-3s %-30s %-20s %s%n", "№", "Message", "Sender", "Sent Time");
-        line();
+        lineBig();
         int counterNum = 0;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         for (Message message : community.getCommunityMessages()) {
             counterNum++;
             System.out.printf("%-3s %-30s %-20s %s%n", counterNum, message.getMessage(), message.getSender().getName(), message.getSentTime().format(formatter));
         }
-        line();
+        lineBig();
     }
 
     //Вывод на экран лайков для переданного в метод сообщения
@@ -246,6 +241,8 @@ public class SocialNetwork {
     private static void line() {
         System.out.println("--------------------------");
     }
+
+    private static void lineBig() {System.out.println("---------------------------------------------------------------------------");}
 
     @Override
     public String toString() {

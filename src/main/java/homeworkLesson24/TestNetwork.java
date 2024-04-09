@@ -91,6 +91,8 @@ public class TestNetwork {
         SocialNetwork.addMessageToCommunity(community3, user8, message6);
         SocialNetwork.addMessageToCommunity(community3, user8, message7);
 
+        System.out.println("\nВыведем все сообщения написанные в сообществе 1 (\"Java Coders\")\n");
+
         SocialNetwork.printAllCommunityMessages(community1);
 
         System.out.println("\nПоставим несколько лайков сообщению\n");

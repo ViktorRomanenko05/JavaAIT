@@ -9,13 +9,13 @@ public class Message {
     private User sender;
     private String message;
     private LocalDateTime sentTime = LocalDateTime.now();
-    private HashSet <User> usersLike = new HashSet<>();
+    private HashSet <User> usersLike;
 
     public Message(User sender, String message, LocalDateTime sentTime, HashSet<User> usersLike) {
         this.sender = sender;
         this.message = message;
         this.sentTime = sentTime;
-        this.usersLike = usersLike;
+        this.usersLike = new HashSet<>();
     }
 
     public User getSender() {

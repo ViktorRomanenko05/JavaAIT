@@ -7,14 +7,14 @@ import java.util.Objects;
 public class Community {
 
     private String communityName;
-    private HashSet <User> communityMembers = new HashSet<>();
+    private HashSet <User> communityMembers;
 
     private ArrayList<Message> communityMessages;
 
     public Community(String communityName, HashSet<User> communityMembers, ArrayList<Message> communityMessages) {
         this.communityName = communityName;
-        this.communityMembers = communityMembers;
-        this.communityMessages = communityMessages;
+        this.communityMembers = new HashSet<>();
+        this.communityMessages = new ArrayList<>();
     }
 
     public String getCommunityName() {
