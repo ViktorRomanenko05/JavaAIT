@@ -10,17 +10,17 @@ public class User {
     //Обозначаем поля в классе
     private String name;
     private int identifier;
-    private HashSet<User> friends = new HashSet<>();
+    private HashSet<User> friends;
 
-    private ArrayList <Message> messages = new ArrayList<>();
+    private ArrayList <Message> messages;
 
     //Конструктор
 
     public User(String name, int identifier, HashSet<User> friends, ArrayList<Message> messages) {
         this.name = name;
         this.identifier = identifier;
-        this.friends = friends;
-        this.messages = messages;
+        this.friends = new HashSet<>();
+        this.messages = new ArrayList<>();
     }
 
 
@@ -61,19 +61,19 @@ public class User {
 
     //генерируем методы equals и hashCode
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return identifier == user.identifier && Objects.equals(name, user.name);
+        return identifier == user.identifier;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, identifier);
+        return Objects.hash(identifier);
     }
-
 
     //Метод для добавления новых друзей в список пользователя
     public void addFriend (User friend){
