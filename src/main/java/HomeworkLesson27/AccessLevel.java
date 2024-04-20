@@ -3,13 +3,14 @@ package HomeworkLesson27;
 public enum AccessLevel {
 
     PRODUCER(3, "Full access"),
-    DIRECTOR(2, "Acces to managing the filming process, technical & artistic sections"),
+    DIRECTOR(2, "Access to managing the filming process, technical & artistic sections"),
     TECHNICAL_STAFF(1, "Access to technical functionality"),
     ACTOR(0 , "Artistic sections");
 
     int level;
     String description;
 
+    //Определим необходимые уровни доступа
     AccessLevel(int level, String description) {
         this.level = level;
         this.description = description;

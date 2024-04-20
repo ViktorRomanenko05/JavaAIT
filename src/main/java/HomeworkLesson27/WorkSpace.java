@@ -2,6 +2,8 @@ package HomeworkLesson27;
 
 public class WorkSpace {
 
+    //Создадим методы для разных членов команды с проверкой доступа перед выполнением
+
     public void projectManger(FilmStudioEmployee employee){
         if (employee.getAccessLevel().fullAccess()){
             System.out.println("\nPROJECT MANAGER " +

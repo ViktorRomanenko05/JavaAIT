@@ -6,7 +6,7 @@ public class CrewSet {
 
     static HashMap <Integer, FilmStudioEmployee> team = new HashMap<>();
 
-
+    //Метод для добавления профилей сотрудников в хранилище
     public void addTeamMember(FilmStudioEmployee employee) {
         if (employee == null) {
             System.out.println("Object employee is null");
@@ -20,6 +20,7 @@ public class CrewSet {
         }
     }
 
+    //Метод для иммитации рабочего процесса, требуемый по заданию
     public void simulateDayOfWork(HashMap <Integer, FilmStudioEmployee> team){
         for (FilmStudioEmployee employee : team.values()){
             employee.work();
