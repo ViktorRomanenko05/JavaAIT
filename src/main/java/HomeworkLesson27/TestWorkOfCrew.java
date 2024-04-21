@@ -7,11 +7,11 @@ public class TestWorkOfCrew {
         WorkSpace workSpace = new WorkSpace();
 
         //Создадим объекты всех членов съемочной группы задействованных в рабочем процессе
-        Producer producer = new Producer("Alex", "producer", 10, 0000, AccessLevel.PRODUCER);
-        Director director = new Director("Peter", "director", 12,1111, AccessLevel.DIRECTOR);
-        Actor actor = new Actor("James", "actor", 8, 0010, AccessLevel.ACTOR);
-        CameraOperator operator = new CameraOperator("Alice", "camera operator", 20, 0111, AccessLevel.TECHNICAL_STAFF);
-        SoundEngineer soundEngineer = new SoundEngineer("Max", "sound engineer", 5, 0101, AccessLevel.TECHNICAL_STAFF);
+        Producer producer = new Producer("Alex", "producer", 10, 1011, AccessLevel.PRODUCER);
+        Director director = new Director("Peter", "director", 12,1000, AccessLevel.DIRECTOR);
+        Actor actor = new Actor("James", "actor", 8, 1001, AccessLevel.ACTOR);
+        CameraOperator operator = new CameraOperator("Alice", "camera operator", 20, 1010, AccessLevel.TECHNICAL_STAFF);
+        SoundEngineer soundEngineer = new SoundEngineer("Max", "sound engineer", 5, 1111, AccessLevel.TECHNICAL_STAFF);
         Editor editor = new Editor("Eric", "editor", 7, 1101, AccessLevel.TECHNICAL_STAFF);
 
         //Добавим созданные объекты в хранилище
@@ -26,6 +26,20 @@ public class TestWorkOfCrew {
         movieSet.addTeamMember(director);
         movieSet.addTeamMember(soundEngineer);
 
+
+        //Выводим на экран список всех членов съемочной группы из хранилища.
+        System.out.println("\nСписок всех членов съемочной групы");
+        line();
+        System.out.printf("%-3s %-6s %-10s %-17s %s%n","№", "ID", "Name", "Position", "Experience");
+        line();
+        int counter = 0;
+        for (FilmStudioEmployee employee : CrewSet.team.values()){
+            counter++;
+            System.out.printf("%-3s %-6s %-10s %-17s %s%n", counter, employee.getId(),employee.getName(),employee.getPosition(),"        "+employee.getExperienceYears());
+
+        }
+        line();
+
         //Запустим переопределенные методы work(), как указано в задании
         movieSet.simulateDayOfWork(CrewSet.team);
 
@@ -36,5 +50,9 @@ public class TestWorkOfCrew {
         workSpace.roles(actor);
         workSpace.roles(operator);
         workSpace.roles(producer);
+    }
+
+    public static void line(){
+        System.out.println("--------------------------------------------------");
     }
 }
