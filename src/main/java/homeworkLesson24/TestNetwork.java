@@ -7,7 +7,6 @@ import java.util.HashSet;
 import java.util.SortedMap;
 
 public class TestNetwork {
-
     public static void main(String[] args) {
 
         // Создание хранилищ пользователей и сообществ

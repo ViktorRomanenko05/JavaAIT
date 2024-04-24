@@ -242,7 +242,7 @@ public class SocialNetwork {
         System.out.println("--------------------------");
     }
 
-    private static void lineBig() {System.out.println("---------------------------------------------------------------------------");}
+    private static void lineBig() {System.out.println("----------------------------------------------------------------------------");}
 
     @Override
     public String toString() {
