@@ -35,7 +35,7 @@ public class Sculpture extends WorkOfArt implements Artwork {
                 "Name: " + this.getName() +"\n"+
                 "Artist: " + this.getAuthor() + "\n" +
                 "Year: " + this.getYearOfCreation() + "\n"+
-                "Type of paint: " + this.sculptureMaterial + "\n"+
+                "Type of material: " + this.sculptureMaterial + "\n"+
                 "Weight (Kg): " + this.getWeightKg());
     }
 
