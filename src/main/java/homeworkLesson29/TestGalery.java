@@ -9,6 +9,8 @@ public class TestGalery {
 
         ArtGallery artGallery = new ArtGallery();
 
+        ArrayList<Artwork> interfaces = new ArrayList<>();
+
         //Создадим для демонстрации несколько объектов произведений искусства
         Painting painting1 = new Painting(1,"Sophia Martinez", "Silent Reverie", 1967, "Restoration in 2026", ObjectType.PAINTING, TypeOfPaint.OIL, 0.40,0.25);
         Painting painting2 = new Painting(2,"Liam Johnson", "Burst of Light", 2003, "Restoration in 2028", ObjectType.PAINTING, TypeOfPaint.OIL, 0.60,0.30);
@@ -49,6 +51,14 @@ public class TestGalery {
 
         artwork3.getCreator();
         artwork4.getCreator();
+
+        //Интерфейсы одного типа но реализованные разными классами можно хранить в одном хранилище
+        interfaces.add(artwork1);
+        interfaces.add(artwork2);
+        interfaces.add(artwork3);
+        interfaces.add(artwork4);
+        interfaces.add(artwork5);
+        System.out.println("\nВ хранилище interfaces добавлено " + interfaces.size() + " объектов\n");
 
         //Выведем на экран все объекты
         artGallery.printAllWorks();
