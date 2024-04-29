@@ -1,13 +1,7 @@
 package homeworkLesson29;
 
-import HomeworkLesson27.FilmStudioEmployee;
-import homeworkLesson24.SocialNetwork;
-import homeworkLesson24.User;
-import lesson27.Teacher;
-
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class ArtGallery {
     private HashMap <Integer, WorkOfArt> worksOfArt = new HashMap<>();
