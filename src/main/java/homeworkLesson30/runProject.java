@@ -16,8 +16,6 @@ import java.util.ArrayList;
 public class runProject {
     public static void main(String[] args) {
 
-        //Пока не успел реализовать логику для взаимодействия с пользователем.
-
         //Создадим необходимые интерфейсы
         EmployeeInterface employeeInterface = new EmployeesManager();
         ProjectInterface projectInterface = new ProjectsManager();
