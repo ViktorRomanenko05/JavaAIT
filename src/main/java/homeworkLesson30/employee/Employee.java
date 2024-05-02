@@ -66,6 +66,7 @@ public class Employee {
                 '}';
     }
 
+    //Добавление задачи в список пользователя
     public void addTaskToEmployee(Task task) {
         if (task == null) {
             System.err.println("Object task is null");
@@ -75,6 +76,20 @@ public class Employee {
                 System.out.println("Task " + task.getTaskId() + " successfully added to employee list");
             } else {
                 System.out.println("Employee already has task " + task.getTaskId());
+            }
+        }
+    }
+
+    //Удаление задачи из списка пользователя
+    public void delTaskFromEmployeeList(Task task) {
+        if (task == null) {
+            System.err.println("Object task is null");
+        } else {
+            boolean remove = this.tasks.remove(task.getTaskId(), task);
+            if (remove) {
+                System.out.println("Task " + task.getTaskId() + " successfully removed from employee list");
+            } else {
+                System.out.println("Task was not found");
             }
         }
     }
