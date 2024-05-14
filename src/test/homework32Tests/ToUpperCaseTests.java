@@ -32,7 +32,7 @@ public class ToUpperCaseTests {
     }
 
     @Test
-    @DisplayName("проверка результата изменения регистра - проверка негативного сценария")
+    @DisplayName("проверка результата изменения регистра - проверка на передачу null")
     void toUpperCaseNotNull(){
         assertNotNull("check", wordCase.stringToUpperCase("cHeck"));
     }

@@ -50,13 +50,13 @@ class MethodCompareTests {
     }
 
     @Test
-    @DisplayName("Проверка случая a - negative")
+    @DisplayName("Проверка случая a < b - negative")
     void checkingAnegativeMinBnegativeMax(){
         assertEquals(-21, compare.max(-35,-21));
     }
 
     @Test
-    @DisplayName("Проверка случая a - negative")
+    @DisplayName("Проверка случая a > b - negative")
     void checkingAnegativeMaxBnegativeMin(){
         assertEquals(-17, compare.max(-17,-74));
     }
