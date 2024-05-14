@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-//Класс для тестирования методов класса ArrayList с использованием @Before
+//Класс для тестирования методов класса ArrayList с использованием @BeforeEach
 
 public class ArrayListTests {
     private ArrayList<String> list;
