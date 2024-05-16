@@ -19,7 +19,7 @@ public class ClothingManager {
             System.err.println("Error!! Clothing Item is null. It was not added!");
         } else {
             clothingItems.add(item);
-            System.out.println("Clothing item was successfully added");
+            System.out.println("Clothing item " + item.getType() + " " +  item.getName() + " was successfully added");
         }
     }
 
@@ -39,6 +39,7 @@ public class ClothingManager {
                 if (item.getName().equalsIgnoreCase(name)) {
                     iterator.remove();
                     counter++;
+                    System.out.println("Clothing item " + item.getType() + " " +  item.getName() +" was removed");
                 }
             }
         }
