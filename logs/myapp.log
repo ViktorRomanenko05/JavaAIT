@@ -1,0 +1,326 @@
+2024-05-23 00:00:14.807 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:00:14.815 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 60.
+2024-05-23 00:00:14.816 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 20.
+2024-05-23 00:00:14.816 [main] ERROR homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 0. Животное устало и нуждается в отдыхе.
+2024-05-23 00:00:14.817 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 20.
+2024-05-23 00:00:14.817 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 40.
+2024-05-23 00:00:14.817 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 60.
+2024-05-23 00:00:14.817 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile
+Name:   Gena
+Energy: 60
+2024-05-23 00:01:08.503 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:01:08.509 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 60.
+2024-05-23 00:01:08.509 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 20.
+2024-05-23 00:01:08.509 [main] ERROR homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 0. Животное устало и нуждается в отдыхе.
+2024-05-23 00:01:08.509 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 20.
+2024-05-23 00:01:08.509 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 40.
+2024-05-23 00:01:08.510 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 60.
+2024-05-23 00:01:08.510 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile
+Name:   Gena
+Energy: 60
+2024-05-23 00:01:23.804 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:01:23.812 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 60.
+2024-05-23 00:01:23.812 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 20.
+2024-05-23 00:01:23.812 [main] ERROR homeworkLesson34_1.Animal - Животное Crocodile Gena поиграло и его энергия теперь 0. Животное устало и нуждается в отдыхе.
+2024-05-23 00:01:23.813 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 20.
+2024-05-23 00:01:23.813 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 40.
+2024-05-23 00:01:23.813 [main] DEBUG homeworkLesson34_1.Animal - Животное Crocodile Gena поело и его энергия теперь 60.
+2024-05-23 00:01:23.814 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile
+Name:   Gena
+Energy: 60
+2024-05-23 00:08:41.004 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:08:41.011 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:08:41.014 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 00:08:41.015 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 00:08:41.015 [main] ERROR homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 0. The animal is tired and needs to rest.
+2024-05-23 00:08:41.015 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 20.
+2024-05-23 00:08:41.015 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 40.
+2024-05-23 00:08:41.015 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 60.
+2024-05-23 00:08:41.015 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile
+Name:   Gena
+Energy: 60
+2024-05-23 00:10:09.741 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:10:09.755 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:10:09.763 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 00:10:09.763 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 00:10:09.763 [main] ERROR homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 0. The animal is tired and needs to rest.
+2024-05-23 00:10:09.764 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 20.
+2024-05-23 00:10:09.764 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 40.
+2024-05-23 00:10:09.764 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 60.
+2024-05-23 00:10:09.765 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile Name:   GenaEnergy: 60
+2024-05-23 00:13:32.662 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:13:32.670 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:13:32.674 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 00:13:32.674 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 00:13:32.674 [main] ERROR homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 0. The animal is tired and needs to rest.
+2024-05-23 00:13:32.675 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 20.
+2024-05-23 00:13:32.675 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 40.
+2024-05-23 00:13:32.675 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has eaten and its energy is now 60.
+2024-05-23 00:13:32.675 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile Name:   Gena Energy: 60
+2024-05-23 00:27:32.852 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:27:32.865 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:27:32.865 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:27:32.865 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:27:32.865 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:27:32.865 [main] DEBUG homeworkLesson34_1.Zoo - Animal Bird Nemo was successfully added
+2024-05-23 00:29:05.216 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:29:05.234 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:29:05.234 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:29:05.234 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:29:05.234 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:29:05.235 [main] DEBUG homeworkLesson34_1.Zoo - Animal Bird Nemo was successfully added
+2024-05-23 00:29:28.039 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:29:28.055 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:29:28.056 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:29:28.056 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:29:28.056 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:29:28.056 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:34:27.299 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:34:27.310 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:34:27.310 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:34:27.310 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:34:27.310 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:34:27.310 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:36:20.384 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:36:20.396 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:36:20.397 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:36:20.397 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:36:20.397 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:36:20.397 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 00:36:58.893 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:36:58.903 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:36:58.903 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:36:58.903 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:36:58.903 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:36:58.903 [main] DEBUG homeworkLesson34_1.Zoo - Animal Bird Nemo was successfully added
+2024-05-23 00:39:44.560 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:39:44.571 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:39:44.571 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:39:44.571 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:39:44.571 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:39:44.571 [main] DEBUG homeworkLesson34_1.Zoo - Animal Bird Nemo was successfully added
+2024-05-23 00:41:56.795 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:41:56.803 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:41:56.803 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:41:56.803 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:41:56.803 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:41:56.804 [main] DEBUG homeworkLesson34_1.Zoo - Animal Bird Nemo was successfully added
+2024-05-23 00:44:05.275 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:44:05.286 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:44:05.286 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:44:05.287 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:44:05.287 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:44:05.287 [main] DEBUG homeworkLesson34_1.Zoo - Animal Bird Nemo was successfully added
+2024-05-23 00:45:14.129 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:45:14.142 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:45:14.142 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:45:14.142 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:45:14.142 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:45:14.142 [main] DEBUG homeworkLesson34_1.Zoo - Animal Bird Nemo was successfully added
+2024-05-23 00:48:20.155 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:48:20.166 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:48:20.167 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:48:20.167 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:48:20.167 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:48:20.167 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 00:48:29.062 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:48:29.072 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:48:29.072 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:48:29.072 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:48:29.072 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:48:29.072 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish1 Nemo was successfully added
+2024-05-23 00:51:07.079 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:51:07.088 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:51:07.088 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:51:07.088 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:51:07.088 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:51:07.089 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 00:51:07.092 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 00:51:07.092 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 00:51:07.092 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 00:51:07.092 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 00:51:07.092 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 00:51:07.092 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 00:51:07.092 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 00:51:07.092 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 00:51:07.093 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant Name:   Jumbo Energy: 80
+2024-05-23 00:51:07.093 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile Name:   Gena Energy: 50
+2024-05-23 00:51:07.093 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish Name:   Nemo Energy: 100
+2024-05-23 00:52:16.022 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 00:52:16.033 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 00:52:16.033 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 00:52:16.033 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 00:52:16.034 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 00:52:16.034 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 00:52:16.039 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 00:52:16.039 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 00:52:16.039 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 00:52:16.039 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 00:52:16.039 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 00:52:16.039 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 00:52:16.039 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 00:52:16.039 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 00:52:16.040 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant, Name: Jumbo, Energy: 80
+2024-05-23 00:52:16.040 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile, Name: Gena, Energy: 50
+2024-05-23 00:52:16.040 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish, Name: Nemo, Energy: 100
+2024-05-23 01:00:00.264 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has eaten and its energy is now 100.
+2024-05-23 01:08:02.617 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Rex was successfully added
+2024-05-23 01:08:02.620 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Max was successfully added
+2024-05-23 01:08:02.620 [main] DEBUG homeworkLesson34_1.Zoo - Animal Cat Rex was successfully added
+2024-05-23 01:08:02.620 [main] DEBUG homeworkLesson34_1.Zoo - Animal Cat Whiskers was successfully added
+2024-05-23 01:09:57.755 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Rex was successfully added
+2024-05-23 01:09:57.758 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Max was successfully added
+2024-05-23 01:09:57.758 [main] WARN  homeworkLesson34_1.Zoo - Animal Dog Rex was not added
+2024-05-23 01:09:57.759 [main] DEBUG homeworkLesson34_1.Zoo - Animal Cat Whiskers was successfully added
+2024-05-23 01:14:51.711 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 01:14:51.721 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 01:14:51.721 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 01:14:51.721 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 01:14:51.721 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:14:51.721 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 01:14:51.725 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 01:14:51.725 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 01:14:51.725 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 01:14:51.725 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 01:14:51.725 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 01:14:51.725 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 01:14:51.725 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 01:14:51.726 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 01:14:51.726 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant, Name: Jumbo, Energy: 80
+2024-05-23 01:14:51.726 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile, Name: Gena, Energy: 50
+2024-05-23 01:14:51.726 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish, Name: Nemo, Energy: 100
+2024-05-23 01:18:42.433 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 01:18:42.451 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 01:18:42.452 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 01:18:42.452 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 01:18:42.452 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:18:42.453 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 01:18:42.461 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 01:18:42.461 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 01:18:42.461 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 01:18:42.461 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 01:18:42.462 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 01:18:42.463 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 01:18:42.463 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 01:18:42.463 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 01:18:42.464 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant, Name: Jumbo, Energy: 80
+2024-05-23 01:18:42.464 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile, Name: Gena, Energy: 50
+2024-05-23 01:18:42.465 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish, Name: Nemo, Energy: 100
+2024-05-23 01:20:07.189 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 01:20:07.205 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 01:20:07.206 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 01:20:07.206 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 01:20:07.206 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:20:07.206 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 01:20:07.213 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 01:20:07.214 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 01:20:07.214 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 01:20:07.214 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 01:20:07.214 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 01:20:07.215 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 01:20:07.215 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 01:20:07.215 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 01:20:07.216 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant, Name: Jumbo, Energy: 80
+2024-05-23 01:20:07.216 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile, Name: Gena, Energy: 50
+2024-05-23 01:20:07.216 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish, Name: Nemo, Energy: 100
+2024-05-23 01:21:08.573 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 01:21:08.588 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 01:21:08.588 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 01:21:08.588 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 01:21:08.588 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:21:08.589 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 01:21:08.589 [main] ERROR homeworkLesson34_1.Zoo - Animal petName is null
+2024-05-23 01:21:08.594 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 01:21:08.595 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 01:21:08.595 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 01:21:08.595 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 01:21:08.595 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 01:21:08.595 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 01:21:08.596 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 01:21:08.596 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 01:21:08.596 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant, Name: Jumbo, Energy: 80
+2024-05-23 01:21:08.596 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile, Name: Gena, Energy: 50
+2024-05-23 01:21:08.597 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish, Name: Nemo, Energy: 100
+2024-05-23 01:22:02.107 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has eaten and its energy is now 100.
+2024-05-23 01:22:02.126 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has slept and its energy is now 100.
+2024-05-23 01:22:02.131 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has played and its energy is now 60.
+2024-05-23 01:22:02.131 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has played and its energy is now 20.
+2024-05-23 01:22:02.134 [main] ERROR homeworkLesson34_1.Animal - Animal Dog Rex has played and its energy is now 0. The animal is tired and needs to rest.
+2024-05-23 01:22:02.138 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:22:02.142 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Rex was successfully added
+2024-05-23 01:22:02.142 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Max was successfully added
+2024-05-23 01:22:02.142 [main] WARN  homeworkLesson34_1.Zoo - Animal Dog Rex was not added
+2024-05-23 01:22:02.143 [main] DEBUG homeworkLesson34_1.Zoo - Animal Cat Felix was successfully added
+2024-05-23 01:22:02.146 [main] ERROR homeworkLesson34_1.Zoo - Animal name is null
+2024-05-23 01:22:02.146 [main] ERROR homeworkLesson34_1.Zoo - Animal petName is null
+2024-05-23 01:24:06.632 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Rex was successfully added
+2024-05-23 01:24:06.634 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Max was successfully added
+2024-05-23 01:24:06.635 [main] WARN  homeworkLesson34_1.Zoo - Animal Dog Rex was not added
+2024-05-23 01:24:06.635 [main] DEBUG homeworkLesson34_1.Zoo - Animal Cat Felix was successfully added
+2024-05-23 01:24:28.544 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 01:24:28.561 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 01:24:28.561 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 01:24:28.561 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 01:24:28.561 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:24:28.561 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 01:24:28.561 [main] ERROR homeworkLesson34_1.Zoo - Animal petName is null
+2024-05-23 01:24:28.566 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 01:24:28.567 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 01:24:28.567 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 01:24:28.567 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 01:24:28.567 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 01:24:28.568 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 01:24:28.568 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 01:24:28.568 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 01:24:28.568 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant, Name: Jumbo, Energy: 80
+2024-05-23 01:24:28.568 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile, Name: Gena, Energy: 50
+2024-05-23 01:24:28.568 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish, Name: Nemo, Energy: 100
+2024-05-23 01:25:59.875 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 01:25:59.888 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 01:25:59.888 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 01:25:59.888 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 01:25:59.889 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:25:59.889 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 01:25:59.889 [main] ERROR homeworkLesson34_1.Zoo - Animal petName is null
+2024-05-23 01:25:59.897 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 01:25:59.897 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 01:25:59.898 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 01:25:59.898 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 01:25:59.899 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 01:25:59.899 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 01:25:59.899 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 01:25:59.899 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 01:25:59.900 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant, Name: Jumbo, Energy: 80
+2024-05-23 01:25:59.900 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile, Name: Gena, Energy: 50
+2024-05-23 01:25:59.900 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish, Name: Nemo, Energy: 100
+2024-05-23 01:28:42.400 [main] INFO  homeworkLesson34_1.Animal - The ZOO application has been started
+2024-05-23 01:28:42.414 [main] DEBUG homeworkLesson34_1.Zoo - Animal Crocodile Gena was successfully added
+2024-05-23 01:28:42.414 [main] DEBUG homeworkLesson34_1.Zoo - Animal Elephant Jumbo was successfully added
+2024-05-23 01:28:42.414 [main] DEBUG homeworkLesson34_1.Zoo - Animal Fish Nemo was successfully added
+2024-05-23 01:28:42.414 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:28:42.415 [main] WARN  homeworkLesson34_1.Zoo - Animal Fish Nemo was not added
+2024-05-23 01:28:42.415 [main] ERROR homeworkLesson34_1.Zoo - Animal petName is null
+2024-05-23 01:28:42.421 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 60.
+2024-05-23 01:28:42.421 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has played and its energy is now 20.
+2024-05-23 01:28:42.421 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has played and its energy is now 60.
+2024-05-23 01:28:42.421 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has played and its energy is now 60.
+2024-05-23 01:28:42.421 [main] DEBUG homeworkLesson34_1.Animal - Animal Crocodile Gena has slept and its energy is now 50.
+2024-05-23 01:28:42.422 [main] DEBUG homeworkLesson34_1.Animal - Animal Elephant Jumbo has eaten and its energy is now 80.
+2024-05-23 01:28:42.422 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 80.
+2024-05-23 01:28:42.422 [main] DEBUG homeworkLesson34_1.Animal - Animal Fish Nemo has eaten and its energy is now 100.
+2024-05-23 01:28:42.422 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Elephant, Name: Jumbo, Energy: 80
+2024-05-23 01:28:42.422 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Crocodile, Name: Gena, Energy: 50
+2024-05-23 01:28:42.423 [main] DEBUG homeworkLesson34_1.Zoo - Animal: Fish, Name: Nemo, Energy: 100
+2024-05-23 01:29:04.952 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has eaten and its energy is now 100.
+2024-05-23 01:29:15.954 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has eaten and its energy is now 100.
+2024-05-23 01:29:15.972 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has slept and its energy is now 100.
+2024-05-23 01:29:15.978 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has played and its energy is now 60.
+2024-05-23 01:29:15.978 [main] DEBUG homeworkLesson34_1.Animal - Animal Dog Rex has played and its energy is now 20.
+2024-05-23 01:29:15.981 [main] WARN  homeworkLesson34_1.Animal - Animal Dog Rex has played and its energy is now 0. The animal is tired and needs to rest.
+2024-05-23 01:29:15.986 [main] ERROR homeworkLesson34_1.Zoo - Object animal is null
+2024-05-23 01:29:15.991 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Rex was successfully added
+2024-05-23 01:29:15.991 [main] DEBUG homeworkLesson34_1.Zoo - Animal Dog Max was successfully added
+2024-05-23 01:29:15.992 [main] WARN  homeworkLesson34_1.Zoo - Animal Dog Rex was not added
+2024-05-23 01:29:15.992 [main] DEBUG homeworkLesson34_1.Zoo - Animal Cat Felix was successfully added
+2024-05-23 01:29:15.995 [main] ERROR homeworkLesson34_1.Zoo - Animal name is null
+2024-05-23 01:29:15.996 [main] ERROR homeworkLesson34_1.Zoo - Animal petName is null
