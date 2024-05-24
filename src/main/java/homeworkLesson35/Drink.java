@@ -10,7 +10,6 @@ public class Drink {
 
     private static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LoggerFactory.getLogger(Drink.class);
-    private static String[] drink = new String[3];
 
     public static void main(String[] args) {
         LOGGER.info("Приложение запущено");
