@@ -69,7 +69,7 @@ public class Drink {
         if (iteration == 10){
             System.out.println("\nДостигнуто максимальное количество заказов");
             LOGGER.debug("Достигнуто максимальное количество заказов за сессию.");
-        } else if (!cycle.equalsIgnoreCase("yes")) {
+        } else {
             LOGGER.debug("Работа программы завершена пользователем");
         }
 
