@@ -24,7 +24,7 @@ public class ExceptionPropagation {
 В методе main вызовите method1 и обработайте исключение с помощью блока try-catch.
      */
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(NumberChecker.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ExceptionPropagation.class);
 
     public static void main(String[] args) {
         LOGGER.info("The program was started");
