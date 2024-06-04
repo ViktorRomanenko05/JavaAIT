@@ -22,11 +22,15 @@ public class BankOperations {
             account.withdraw(700); // Ошибка
 
             LOGGER.info("All operations are complete.");
+
+            //Дополнительно для проверки пробуем создать аккаунт с неподходящим номером
+            BankAccount accountBad = new BankAccount("2201500932a", 0);
+
         } catch (IllegalArgumentException exception) {
             LOGGER.error("Failed to create bank account: {}", exception.getMessage());
         }
         finally {
-            LOGGER.info("The program has completed");
+            LOGGER.info("The program is completed");
         }
     }
 }

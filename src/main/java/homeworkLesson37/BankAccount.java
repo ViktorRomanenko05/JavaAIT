@@ -16,6 +16,7 @@ public class BankAccount {
 
     public BankAccount(String accountNumber, double balance) {
         if (!isValidAccountNumber(accountNumber)) {
+            LOGGER.error("Account number is incorrect");
             throw new IllegalArgumentException("Invalid account number. It must contain exactly 10 digits.");
         }
         this.accountNumber = accountNumber;
@@ -24,17 +25,22 @@ public class BankAccount {
 
     //Метод для проверки соответствия номера счета стандарту
     private boolean isValidAccountNumber(String accountNumber) {
+        LOGGER.info("Account number check started");
         if (accountNumber == null) {
+            LOGGER.warn("Account number is null");
             return false;
         }
         if (accountNumber.length() != 10) {
+            LOGGER.warn("Length of account number is incorrect");
             return false;
         }
         for (int i = 0; i < accountNumber.length(); i++) {
             if (!Character.isDigit(accountNumber.charAt(i))) {
+                LOGGER.warn("Not all characters in account number is digits");
                 return false;
             }
         }
+        LOGGER.info("Account number is correct");
         return true;
     }
 
