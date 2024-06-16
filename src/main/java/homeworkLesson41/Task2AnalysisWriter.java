@@ -89,6 +89,8 @@ public class Task2AnalysisWriter {
             }
 
 
+
         }
+        scanner.close();
     }
 }
