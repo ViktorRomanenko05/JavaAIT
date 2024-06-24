@@ -76,7 +76,7 @@ public class AuthenticationManager {
             LOGGER.info("User " + username + " logged in successfully");
         } else {
             System.out.println("Invalid username or password");
-            LOGGER.info("Invalid username or password");
+            LOGGER.info("User {} login failed", username);
         }return user;
     }
 

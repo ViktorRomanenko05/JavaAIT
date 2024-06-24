@@ -1,6 +1,7 @@
 package homeworkLesson43;
 
 import com.github.javafaker.Faker;
+import org.apache.commons.validator.routines.RegexValidator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.util.Scanner;
@@ -11,7 +12,7 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
     private static Faker faker = new Faker();
 
-    public static void main(String[] args) {
+    public static <egexValidator> void main(String[] args) {
 
         String choice;
         String name;
@@ -19,7 +20,7 @@ public class Main {
         User user;
 
 //        for (int i = 0; i < 1000; i++) {
-//            AuthenticationManager.registration(name = faker.name().username(), faker.internet().password());
+//            AuthenticationManager.registration(name = faker.name().username(), faker.internet().password().);
 //        }
 
         System.out.println("\nЗдравствуйте!\n" +
@@ -32,7 +33,16 @@ public class Main {
             System.out.print("Введите имя пользователя: ");
             name = scanner.nextLine();
             System.out.print("Введите пароль: ");
-            password = scanner.nextLine();
+            RegexValidator passwordValidator = new RegexValidator("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$");
+            boolean passwordIsValid = false;
+            do {
+                password = scanner.nextLine();
+                passwordIsValid = passwordValidator.isValid(password);
+                if (!passwordIsValid) {
+                    System.out.println("Введенный Вами пароль не соответствует правилам защиты:");
+                    System.out.println("Пароль должен быть не короче 8 символов и содержать минимум одну заглавную букву, одну строчную букву, одну цифру и один специальный символ.");
+                }
+            } while (!passwordIsValid);
             AuthenticationManager.registration(name, password);
 
         }
