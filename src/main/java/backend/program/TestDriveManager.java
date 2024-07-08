@@ -3,10 +3,17 @@ package backend.program;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.HashMap;
 import java.util.HashSet;
 
 
-public class TestDriveManager {
+public class TestDriveManager implements Serializable {
     private HashSet<TestDrive> testDriveList = new HashSet<>();
     private static final Logger LOGGER = LoggerFactory.getLogger(TestDriveManager.class);
 
@@ -14,8 +21,33 @@ public class TestDriveManager {
         return new HashSet<>(testDriveList);
     }
 
+    //Сериализация тест-драйвов
+    public void serializeTestDrives() {
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("src/main/resources/testDrives.ser"))) {
+            objectOutputStream.writeObject(testDriveList);
+            LOGGER.info("Test-drives have been serialized");
+        } catch (IOException exception) {
+            LOGGER.error("Error during users serialization", exception.getMessage());
+        }
+    }
+
+    //Десериализация тест-драйвов
+    public void deserializeTestDrives() {
+        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("src/main/resources/testDrives.ser"))) {
+            testDriveList = (HashSet<TestDrive>) objectInputStream.readObject();
+            LOGGER.info("Users have been deserialized");
+        } catch (IOException exception) {
+            LOGGER.error("Error during users deserialization", exception.getMessage());
+        }
+        catch (ClassNotFoundException exception) {
+            LOGGER.error("Error during users deserialization", exception.getMessage());
+        }
+    }
+
     //Добавляем запись в список Тест Драйв
     public void addTestDrive(TestDrive testDrive) {
+        deserializeTestDrives();
+        PersonManager.deserializeUsers();
         if (testDrive == null) {
             LOGGER.error("Error!!! Empty value");
             throw new NullPointerException("Value is null");
@@ -36,13 +68,15 @@ public class TestDriveManager {
             testDrive.getUser().addTestDrive(testDrive);
             LOGGER.info("Test Drive was added{} {}", testDrive.getAuto().getModel(), testDrive.getLocalDate());
         }
+        serializeTestDrives();
+        PersonManager.serializeUsers();
     }
 
     //Удаляем запись из списка на Тест Драйв
     public void removeTestDrive(TestDrive testDrive) {
+        deserializeTestDrives();
         if (testDrive == null) {
             LOGGER.error("Error!!! Empty value");
-            throw new NullPointerException("Value is null");
         }
         LOGGER.info("Remove Test Drive");
         boolean checkResult = false;
@@ -59,8 +93,9 @@ public class TestDriveManager {
         }
     }
 
-    //Вывод на экран всех записей Тест Драв
+    //Вывод на экран всех записей Тест Драйв
     public void displayTestDrive() {
+        deserializeTestDrives();
         if (testDriveList.isEmpty()) {
             LOGGER.error("No test drive appointments found");
         } else {
@@ -72,6 +107,7 @@ public class TestDriveManager {
 
     //Поиск Test Drive по Email
     public HashSet<TestDrive> scoursTestDrive(String eMail) {
+        deserializeTestDrives();
         if (eMail == null) {
             LOGGER.error("Error!!! Empty value");
             throw new NullPointerException("Value is null");

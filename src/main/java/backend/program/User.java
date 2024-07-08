@@ -59,9 +59,15 @@ public class User extends Person implements Serializable {
             LOGGER.error("Object TestDrive is null");
             return;
         }
+
+        // Добавление тест-драйва пользователю
         boolean add = testDrives.add(testDrive);
         if (add) {
             LOGGER.info("The user " + this.getName() + " was registered for a test drive.");
+
+            // Сериализация данных пользователей после добавления тест-драйва
+            PersonManager.users.put(this.getId(), this);
+            PersonManager.serializeUsers();
         } else {
             LOGGER.info("Failed, please try again");
         }

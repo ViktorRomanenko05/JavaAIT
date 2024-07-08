@@ -29,6 +29,7 @@ public class Run {
     private static AutoCatalog autoCatalog = new AutoCatalog();
     private static CreditManager creditManager = new CreditManager();
     private static Statistics statistics = new Statistics();
+    private static TestDriveManager testDriveManager = new TestDriveManager();
 
     public static void main(String[] args) {
         String choice;
@@ -199,7 +200,8 @@ public class Run {
                         "8 - Edit employee information\n" +
                         "9 - Create employee account\n" +
                         "10 - View statistics\n" +
-                        "11 - Exit");
+                        "11 - Print Test-Drives\n" +
+                        "12 - Exit");
                 choiceDirector = scanner.nextLine();
                 switch (choiceDirector) {
                     case "1":
@@ -241,9 +243,68 @@ public class Run {
                         generateReportScenario();
                         break;
                     case "11":
+                        printAllTestDrives();
+                        break;
+                    case "12":
                         return;
                     default:
                         System.out.println("Invalid choice, please try again.");
+                }
+            }
+        }
+
+        if (employee != null && employee.getAccessLevel() == AccessLevel.MANAGER) {
+            while (true) {
+                System.out.println("\nManager Menu - Please choose the desired action:\n" +
+                        "1 - View auto catalog\n" +
+                        "2 - Sell auto to user\n" +
+                        "3 - Sign up user for a test drive\n" +
+                        "4 - Messages\n" +
+                        "5 - Find user information\n" +
+                        "6 - View report\n" +
+                        "7 - Print Test-Drives\n" +
+                        "8 - FAQ\n" +
+                        "9 - Exit");
+                choice = scanner.nextLine();
+                switch (choice) {
+                    case "1":
+                        displayAutoCatalogMenu();
+                        break;
+                    case "2":
+                        User buyer = findUserByEmail();
+                        sellCarByEmployee(buyer, employee);
+                        break;
+                    case "3":
+                        User testDriveUser = findUserByEmail();
+                        signUpForTestDrive(testDriveUser);
+                        break;
+                    case "4":
+                        manageMessages(employee);
+                        break;
+                    case "5":
+                        User foundUser = findUserByEmail();
+                        if (foundUser != null) {
+                            System.out.println(foundUser);
+                            printUserTestDrives(foundUser);
+                            printUserPurchases(foundUser);
+                            displayUserCredits(foundUser);
+                        }
+                        break;
+                    case "6":
+                        generateReportScenario();
+                        break;
+                    case "7":
+                        printAllTestDrives();
+                        break;
+                    case "8":
+                        Faq.showAllFaq();
+                        break;
+                    case "9":
+                        System.out.println("Thank you! Goodbye!");
+                        return;
+                    default:
+                        System.out.println("Invalid value entered, please try again");
+                        break;
                 }
             }
         }
@@ -692,6 +753,7 @@ public class Run {
 
     //Выводим на экран список тест-драйвов пользователя
     public static void printUserTestDrives(User user) {
+        PersonManager.deserializeUsers();
         List<TestDrive> testDrives = user.getTestDrives();
 
         if (testDrives.isEmpty()) {
@@ -766,7 +828,9 @@ public class Run {
     }
 
     //Выводим список всех тест-драйвов автосалона с запросом - прошлые, будущие или все вместе
-    public static void printAllTestDrives(TestDriveManager testDriveManager) {
+    public static void printAllTestDrives() {
+
+        testDriveManager.deserializeTestDrives();
         HashSet<TestDrive> testDrives = testDriveManager.getTestDriveList();
 
         if (testDrives.isEmpty()) {
@@ -869,7 +933,7 @@ public class Run {
         System.out.printf("%-4s %-20s %-20s %-20s %-10s %s%n", "№", "VIN Код", "Бренд", "Модель", "Цена", "Дата покупки");
         line();
 
-        final int[] counter = {1};
+        final int[] counter = {1};//int counter внутри лямбды не работает. Нашел такой способ обойти.
         purchases.values().stream()
                 .sorted(Comparator.comparing(Auto::getDate, Comparator.nullsLast(LocalDate::compareTo)))
                 .forEach(auto -> {
@@ -1073,8 +1137,8 @@ public class Run {
         String eMail = scanner.nextLine();
         System.out.println("Please, enter your message:");
         String text = scanner.nextLine();
-        Person user = personManager.findUserByEmail(eMail);
-        Person employee = personManager.findEmployeeByEmail(eMail);
+        User user = personManager.findUserByEmail(eMail);
+        Employee employee = personManager.findEmployeeByEmail(eMail);
 
         if (employee != null) {
             sender.sendMessage(employee, text);

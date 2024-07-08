@@ -1,5 +1,6 @@
 package backend.program;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /*
@@ -8,7 +9,7 @@ import java.time.LocalDate;
 Возможность подтверждения или отмены записи на тест-драйв.
  */
 
-public class TestDrive {
+public class TestDrive implements Serializable {
     private User user;
     private Auto auto;
     private LocalDate localDate;  //Дата и время записи на Тест Драйв

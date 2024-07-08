@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.TreeMap;
 
-    abstract class Person implements Serializable {
+    class Person implements Serializable {
     private static final Logger LOGGER = LoggerFactory.getLogger(Person.class);
         private static final long serialVersionUID = 1L;
     private String name;
@@ -93,47 +93,59 @@ import java.util.TreeMap;
         return receivedMessages;
     }
 
-    // Метод отправки сообщения
-    public boolean sendMessage(Person recipient, String text) {
-        // Десериализуем данные
-        PersonManager.deserializeUsers();
-        PersonManager.deserializeEmployees();
+        // Метод отправки сообщения
+        public boolean sendMessage(Person recipient, String text) {
+            // Десериализуем данные
+            PersonManager.deserializeUsers();
+            PersonManager.deserializeEmployees();
 
-        if (recipient == null) {
-            LOGGER.warn("Recipient is null");
-            LOGGER.warn("Message not sent");
-            return false;
+            if (recipient == null) {
+                LOGGER.warn("Recipient is null");
+                LOGGER.warn("Message not sent");
+                return false;
+            }
+            if (text == null || text.isEmpty()) {
+                LOGGER.warn("Message text is null or empty");
+                LOGGER.warn("Message not sent");
+                return false;
+            }
+
+            Message message = new Message(this, recipient, text);
+            boolean result1 = this.addSentMessage(message);
+            boolean result2 = recipient.addReceivedMessage(message);
+
+            if (this instanceof User) {
+                PersonManager.users.put(this.getId(), (User) this);
+            } else if (this instanceof Employee) {
+                PersonManager.employees.put(this.getId(), (Employee) this);
+            }
+
+            if (recipient instanceof User) {
+                PersonManager.users.put(recipient.getId(), (User) recipient);
+            } else if (recipient instanceof Employee) {
+                PersonManager.employees.put(recipient.getId(), (Employee) recipient);
+            }
+
+            if (result1 && result2) {
+                LOGGER.info("Message successfully sent");
+            } else if (!result1 && !result2) {
+                LOGGER.warn("Message not sent");
+            } else if (!result1) {
+                LOGGER.warn("Message was sent");
+                LOGGER.warn("Message added to recipient only");
+            } else {
+                LOGGER.warn("Message not sent");
+                LOGGER.warn("Message added to sender only");
+            }
+
+            // Сериализуем данные только если сообщение было отправлено
+            if (result1 || result2) {
+                PersonManager.serializeUsers();
+                PersonManager.serializeEmployees();
+            }
+
+            return result1 && result2;
         }
-        if (text == null || text.isEmpty()) {
-            LOGGER.warn("Message text is null or empty");
-            LOGGER.warn("Message not sent");
-            return false;
-        }
-
-        Message message = new Message(this, recipient, text);
-        boolean result1 = this.addSentMessage(message);
-        boolean result2 = recipient.addReceivedMessage(message);
-
-        if (result1 && result2) {
-            LOGGER.info("Message successfully sent");
-        } else if (!result1 && !result2) {
-            LOGGER.warn("Message not sent");
-        } else if (!result1) {
-            LOGGER.warn("Message was sent");
-            LOGGER.warn("Message added to recipient only");
-        } else {
-            LOGGER.warn("Message not sent");
-            LOGGER.warn("Message added to sender only");
-        }
-
-        // Сериализуем данные только если сообщение было отправлено
-        if (result1 || result2) {
-            PersonManager.serializeUsers();
-            PersonManager.serializeEmployees();
-        }
-
-        return result1 && result2;
-    }
 
     // Метод для добавления отправленного сообщения пользователю
     public boolean addSentMessage(Message message) {

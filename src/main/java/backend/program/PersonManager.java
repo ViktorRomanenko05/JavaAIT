@@ -428,7 +428,7 @@ public class PersonManager {
         serializeEmployees();
     }
 
-    //Изменить уровень доступа пользователя (поиск по id)
+    //Изменить уровень доступа сотрудника (поиск по id)
     public void changeEmployeeAccessLevelById(int id, AccessLevel newAccessLevel) {
         deserializeEmployees();
         Employee employee = findEmployeeByID(id);
