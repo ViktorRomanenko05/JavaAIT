@@ -924,16 +924,16 @@ public class Run {
         Map<String, Auto> purchases = user.getPurchases();
 
         if (purchases.isEmpty()) {
-            System.out.println("Покупки не найдены для пользователя: " + user.getName());
+            System.out.println("No purchases found for user: " + user.getName());
             return;
         }
 
-        System.out.println("\nПокупки пользователя: " + user.getName());
+        System.out.println("\nUser purchases: " + user.getName());
         line();
-        System.out.printf("%-4s %-20s %-20s %-20s %-10s %s%n", "№", "VIN Код", "Бренд", "Модель", "Цена", "Дата покупки");
+        System.out.printf("%-4s %-20s %-20s %-20s %-10s %s%n", "№", "VIN Code", "Brand", "Model", "Price", "Purchase Date");
         line();
 
-        final int[] counter = {1};//int counter внутри лямбды не работает. Нашел такой способ обойти.
+        final int[] counter = {1}; // int counter внутри лямбды не работает. Нашел такой способ обойти.
         purchases.values().stream()
                 .sorted(Comparator.comparing(Auto::getDate, Comparator.nullsLast(LocalDate::compareTo)))
                 .forEach(auto -> {

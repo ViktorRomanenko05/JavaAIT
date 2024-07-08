@@ -118,7 +118,15 @@ public class Credit implements Serializable {
 
     // Метод для расчета оставшегося времени до конца кредита в месяцах
     public int calculateRemainingTermInMonths() {
-        return (int) ChronoUnit.MONTHS.between(LocalDateTime.now().withDayOfMonth(1), endDate);
+        LocalDateTime now = LocalDateTime.now().withDayOfMonth(1);
+
+        if (now.isBefore(startDate)) {
+            // Если текущая дата до начала кредита, вернуть общее количество месяцев по кредиту
+            return calculateLoanTermInMonths();
+        } else {
+            // Если текущая дата в пределах кредита или после начала, вернуть оставшиеся месяцы до конца кредита
+            return (int) ChronoUnit.MONTHS.between(now, endDate);
+        }
     }
 
     // Метод для расчета оставшейся общей суммы платежей
