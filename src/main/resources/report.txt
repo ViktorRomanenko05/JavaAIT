@@ -1,0 +1,18 @@
+Report for period from 2024-07-07 to 2024-07-09
+===============================
+Total number of registered users: 1
+Number of users registered: 1
+Number of active users: 1
+Number of regular customers: 0
+Number of sold cars: 4
+Number of test-drives: 0
+Conversion rate: 0.0%
+Total revenue: $38175.0
+Revenue by employees:
+Automann: $38175.0
+Antony: $0.0
+Alexandr: $0.0
+Most popular brand: AUDI
+Most popular model: EQE Limousine
+===============================
+End of report.
