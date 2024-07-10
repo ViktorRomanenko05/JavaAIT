@@ -55,7 +55,7 @@ public class Run {
         PersonManager.deserializeEmployees();
         autoCatalog.readAutoCatalogFromFile();
         autoCatalog.readSoldCarsFromFile();
-        System.out.println(AutoCatalog.getSoldCars());
+//        System.out.println(AutoCatalog.getSoldCars());
 
 
         System.out.println("\nWELCOME TO THE AUTOTRADER APPLICATION\n" +
@@ -200,8 +200,9 @@ public class Run {
                         "8 - Edit employee information\n" +
                         "9 - Create employee account\n" +
                         "10 - View statistics\n" +
-                        "11 - Print Test-Drives\n" +
-                        "12 - Exit");
+                        "11 - Manage test-Drives\n" +
+                        "12 - Manage car catalog\n" +
+                        "13 - Exit");
                 choiceDirector = scanner.nextLine();
                 switch (choiceDirector) {
                     case "1":
@@ -209,29 +210,42 @@ public class Run {
                         break;
                     case "2":
                         User byer = findUserByEmail();
-                        sellCarByEmployee(byer, employee);
+                        if (byer != null) {
+                            sellCarByEmployee(byer, employee);
+                        }
+                        else {
+                            System.out.println("User was not found");
+                        }
                         break;
                     case "3":
                         User byer1 = findUserByEmail();
-                        signUpForTestDrive(byer1);
+                        if (byer1 != null) {
+                            signUpForTestDrive(byer1);
+                        }
+                        else {
+                            System.out.println("User was not found");
+                        }
                         break;
                     case "4":
                         manageMessages(employee);
                         break;
                     case "5":
                         User foundUser = findUserByEmail();
+                        if(foundUser!=null){
                         System.out.println(foundUser);
                         printUserTestDrives(foundUser);
                         printUserPurchases(foundUser);
-                        displayUserCredits(foundUser);
+                        displayUserCredits(foundUser);}
                         break;
                     case "6":
                         editUserInfo(findUserByEmail());
                         break;
                     case "7":
                         Employee foundEmployee = findEmployeeByEmail();
-                        System.out.println(foundEmployee);
-                        printEmployeeSalesInPeriod(foundEmployee);
+                        if(foundEmployee!=null) {
+                            System.out.println(foundEmployee);
+                            printEmployeeSalesInPeriod(foundEmployee);
+                        }
                         break;
                     case "8":
                         editEmployeeInfo();
@@ -243,9 +257,12 @@ public class Run {
                         generateReportScenario();
                         break;
                     case "11":
-                        printAllTestDrives();
+                        manageTestDrives();
                         break;
                     case "12":
+                        manageCarCatalog();
+                        break;
+                    case "13":
                         return;
                     default:
                         System.out.println("Invalid choice, please try again.");
@@ -262,9 +279,10 @@ public class Run {
                         "4 - Messages\n" +
                         "5 - Find user information\n" +
                         "6 - View report\n" +
-                        "7 - Print Test-Drives\n" +
-                        "8 - FAQ\n" +
-                        "9 - Exit");
+                        "7 - Manage test-Drives\n" +
+                        "8 - Manage car catalog\n" +
+                        "9 - FAQ\n" +
+                        "10 - Exit");
                 choice = scanner.nextLine();
                 switch (choice) {
                     case "1":
@@ -272,11 +290,15 @@ public class Run {
                         break;
                     case "2":
                         User buyer = findUserByEmail();
-                        sellCarByEmployee(buyer, employee);
+                        if(buyer != null) {
+                            sellCarByEmployee(buyer, employee);
+                        }
                         break;
                     case "3":
                         User testDriveUser = findUserByEmail();
-                        signUpForTestDrive(testDriveUser);
+                        if (testDriveUser !=null) {
+                            signUpForTestDrive(testDriveUser);
+                        }
                         break;
                     case "4":
                         manageMessages(employee);
@@ -289,17 +311,24 @@ public class Run {
                             printUserPurchases(foundUser);
                             displayUserCredits(foundUser);
                         }
+                        else {
+                            System.out.println("Incorrect user E-mail");
+                        }
+
                         break;
                     case "6":
                         generateReportScenario();
                         break;
                     case "7":
-                        printAllTestDrives();
+                        manageTestDrives();
                         break;
                     case "8":
-                        Faq.showAllFaq();
+                        manageCarCatalog();
                         break;
                     case "9":
+                        Faq.showAllFaq();
+                        break;
+                    case "10":
                         System.out.println("Thank you! Goodbye!");
                         return;
                     default:
@@ -320,7 +349,8 @@ public class Run {
                     "3 - Search cars by model\n" +
                     "4 - Filter cars by price range\n" +
                     "5 - Filter cars by year of production\n" +
-                    "6 - Exit");
+                    "6 - Display all sold cars\n" +
+                    "7 - Exit");
 
             String choice = scanner.nextLine();
 
@@ -372,10 +402,143 @@ public class Run {
                     autoCatalog.searchByYear(year);
                     break;
                 case "6":
+                    autoCatalog.displaySoldAutoCatalog();
+                    break;
+                case "7":
                     return;
                 default:
                     System.out.println("Invalid choice, please try again.");
             }
+        }
+    }
+
+    //Редактирование каталога
+    public static void manageCarCatalog() {
+        Scanner scanner = new Scanner(System.in);
+        AutoCatalog autoCatalog = new AutoCatalog();
+
+        while (true) {
+            System.out.println("Manage Car Catalog:\n" +
+                    "1 - Add new car to catalog\n" +
+                    "2 - Remove car from catalog\n" +
+                    "3 - Edit car details\n" +
+                    "4 - Return to main menu");
+
+            String choice = scanner.nextLine();
+            switch (choice) {
+                case "1":
+                    addNewCarToCatalog();
+                    break;
+                case "2":
+                    autoCatalog.displayAutoCatalog();
+                    removeCarFromCatalog();
+                    break;
+                case "3":
+                    autoCatalog.displayAutoCatalog();
+                    editCarDetails();
+                    break;
+                case "4":
+                    return;
+                default:
+                    System.out.println("Invalid value entered, please try again");
+                    break;
+            }
+        }
+    }
+
+    //Добавление новой машины в каталог
+    public static void addNewCarToCatalog() {
+        Scanner scanner = new Scanner(System.in);
+        AutoCatalog autoCatalog = new AutoCatalog();
+
+        System.out.println("Enter VIN code:");
+        String vinCode = scanner.nextLine();
+
+        System.out.println("Enter brand:");
+        String brand = scanner.nextLine();
+
+        System.out.println("Enter model:");
+        String model = scanner.nextLine();
+
+        System.out.println("Enter price:");
+        int price = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Enter year of production:");
+        int yearOfProduction = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Enter short characteristics:");
+        String shortCharacteristics = scanner.nextLine();
+
+        System.out.println("Enter full characteristics:");
+        String fullCharacteristics = scanner.nextLine();
+
+        System.out.println("Enter color:");
+        String color = scanner.nextLine();
+
+        Auto newAuto = new Auto(vinCode, brand, model, price, yearOfProduction, shortCharacteristics, fullCharacteristics, color);
+
+        autoCatalog.addNewAutoInCatalog(newAuto);
+    }
+
+    //Удаление машины из каталога
+    public static void removeCarFromCatalog() {
+        Scanner scanner = new Scanner(System.in);
+        AutoCatalog autoCatalog = new AutoCatalog();
+
+        System.out.println("Enter VIN code of the car to remove:");
+        String vinCode = scanner.nextLine();
+
+        Auto auto = autoCatalog.searchAutoForSaleByVinCode(vinCode);
+
+        if (auto != null) {
+            autoCatalog.removeAutoFromCatalog(auto);
+        } else {
+            System.out.println("Car with VIN code " + vinCode + " not found in the catalog.");
+        }
+    }
+
+    //Редактирование данных авто
+    public static void editCarDetails() {
+        Scanner scanner = new Scanner(System.in);
+        AutoCatalog autoCatalog = new AutoCatalog();
+
+        System.out.println("Enter VIN code of the car to edit:");
+        String vinCode = scanner.nextLine();
+
+        Auto auto = autoCatalog.searchAutoForSaleByVinCode(vinCode);
+
+        if (auto != null) {
+            System.out.println("Edit Car Details:\n" +
+                    "1 - Edit price\n" +
+                    "2 - Edit short characteristics\n" +
+                    "3 - Edit full characteristics\n" +
+                    "4 - Return to previous menu");
+
+            String choice = scanner.nextLine();
+            switch (choice) {
+                case "1":
+                    System.out.println("Enter new price:");
+                    int newPrice = Integer.parseInt(scanner.nextLine());
+                    autoCatalog.editingCarPrice(vinCode, newPrice);
+                    break;
+                case "2":
+                    System.out.println("Enter new short characteristics:");
+                    String newShortCharacteristics = scanner.nextLine();
+                    autoCatalog.editingCarShortCharacteristics(vinCode, newShortCharacteristics);
+                    break;
+                case "3":
+                    System.out.println("Enter new full characteristics:");
+                    String newFullCharacteristics = scanner.nextLine();
+                    autoCatalog.edidtingCarFullCharacteristics(vinCode, newFullCharacteristics);
+                    break;
+                case "4":
+                    break;
+                default:
+                    System.out.println("Invalid value entered, please try again");
+                    break;
+            }
+        } else {
+            System.out.println("Car with VIN code " + vinCode + " not found in the catalog.");
         }
     }
 
@@ -594,8 +757,8 @@ public class Run {
         TestDriveManager testDriveManager = new TestDriveManager();
         testDriveManager.addTestDrive(testDrive);
 
-        System.out.println("Test drive for " + auto.getModel() + " has been scheduled on " + testDriveDate);
-        LOGGER.info("User {} signed up for a test drive of car {} on {}", user.getName(), auto.getModel(), testDriveDate);
+        System.out.println("The test drive request for " + auto.getModel() + " has been processed on " + testDriveDate);
+        LOGGER.info("User {}'s request for a test drive of car {} on {} has been processed", user.getName(), auto.getModel(), testDriveDate);
     }
 
     //Сценарий изменения данных сотрудника
@@ -828,8 +991,8 @@ public class Run {
     }
 
     //Выводим список всех тест-драйвов автосалона с запросом - прошлые, будущие или все вместе
-    public static void printAllTestDrives() {
-
+    public static void manageTestDrives() {
+        Statistics statistics = new Statistics();
         testDriveManager.deserializeTestDrives();
         HashSet<TestDrive> testDrives = testDriveManager.getTestDriveList();
 
@@ -839,14 +1002,16 @@ public class Run {
         }
 
         while (true) {
-            System.out.println("Which test drives would you like to see?\n" +
-                    "1 - Past test drives\n" +
-                    "2 - Upcoming test drives\n" +
-                    "3 - All test drives\n" +
-                    "4 - Exit");
+            System.out.println("What would you like to do?\n" +
+                    "1 - View past test drives\n" +
+                    "2 - View upcoming test drives\n" +
+                    "3 - View all test drives\n" +
+                    "4 - View test drives in a specific period\n" +
+                    "5 - Delete a user's test drive\n" +
+                    "6 - Exit");
             String choice = scanner.nextLine();
 
-            Stream <TestDrive> filteredStream = testDrives.stream();
+            Stream<TestDrive> filteredStream = testDrives.stream();
             LocalDate now = LocalDate.now();
 
             switch (choice) {
@@ -860,33 +1025,97 @@ public class Run {
                     // Для вывода всех тест-драйвов не применяем фильтр
                     break;
                 case "4":
+                    LocalDate startDate = getDateFromUser("Enter start date (dd.MM.yyyy):");
+                    LocalDate endDate = getDateFromUser("Enter end date (dd.MM.yyyy):");
+                    if (startDate == null || endDate == null) {
+                        System.out.println("One or both of the dates are null. Please enter valid dates.");
+                        continue;
+                    }
+                    filteredStream = statistics.testDrivesInPeriod(startDate, endDate).stream();
+                    break;
+                case "5":
+                    System.out.println("Enter the user's email:");
+                    String email = scanner.nextLine();
+                    User user = personManager.findUserByEmail(email);
+                    if (user == null) {
+                        System.out.println("No user found with this email.");
+                        continue;
+                    }
+                    List<TestDrive> userTestDrives = user.getTestDrives();
+                    if (userTestDrives.isEmpty()) {
+                        System.out.println("No test drives found for this user.");
+                    } else {
+                        System.out.println("User's test drives:");
+                        System.out.printf("%-20s %-20s %-15s%n", "Model", "VIN Code", "Test Drive Date");
+
+                        line();
+
+                        userTestDrives.forEach(testDrive -> System.out.printf("%-20s %-20s %-15s%n",
+                                testDrive.getAuto().getModel(),
+                                testDrive.getAuto().getVinCode(),
+                                testDrive.getLocalDate().format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))
+                        ));
+                        System.out.println("Enter the VIN code of the car:");
+                        String vinCode = scanner.nextLine();
+                        LocalDate date = getDateFromUser("Enter the date of the test drive (dd.MM.yyyy):");
+                        if (date == null) {
+                            System.out.println("Invalid date format.");
+                            continue;
+                        }
+                        TestDrive testDriveToRemove = null;
+                        for (TestDrive testDrive : userTestDrives) {
+                            if (testDrive.getAuto().getVinCode().equalsIgnoreCase(vinCode) && testDrive.getLocalDate().equals(date)) {
+                                testDriveToRemove = testDrive;
+                                break;
+                            }
+                        }
+                        if (testDriveToRemove != null) {
+                            user.removeTestDriveByDetails(vinCode, date);
+                            testDriveManager.removeTestDrive(testDriveToRemove);
+                            System.out.println("Test drive removed successfully.");
+                        } else {
+                            System.out.println("No matching test drive found.");
+                        }
+                    }
+                    continue;
+                case "6":
                     return;
                 default:
-                    System.out.println("Invalid choice. Please enter 1, 2, 3, or 4.");
+                    System.out.println("Invalid choice. Please enter a valid option.");
                     continue;
             }
 
-            List<TestDrive> filteredTestDrives = filteredStream
-                    .sorted(Comparator.comparing(TestDrive::getLocalDate))
-                    .collect(toList());
+            List<TestDrive> filteredTestDrives = filteredStream.sorted(Comparator.comparing(TestDrive::getLocalDate)).collect(Collectors.toList());
 
             if (filteredTestDrives.isEmpty()) {
                 System.out.println("No matching test drives found.");
             } else {
                 System.out.println("\nList of Test Drives:");
-                line();
+                line3();
                 System.out.printf("%-4s %-20s %-20s %-20s %-25s %s%n", "№", "User", "User ID", "Car Model", "Car VIN", "Date");
-                line();
+                line3();
                 final int[] counter = {1};
                 filteredTestDrives.forEach(testDrive -> {
                     System.out.printf("%-4s %-20s %-20s %-20s %-25s %s%n", counter[0]++, testDrive.getUser().getName(), testDrive.getUser().getId(), testDrive.getAuto().getModel(), testDrive.getAuto().getVinCode(), testDrive.getLocalDate().format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
                 });
-                line();
+                line3();
             }
-            break;
         }
     }
-
+    //Метод ввода и проверки даты! Он не везде используется пока, в некоторых сценариях его нужно применить
+    //Чтобы не дублировать код
+    private static LocalDate getDateFromUser(String message) {
+        System.out.println(message);
+        while (true) {
+            String dateStr = scanner.nextLine();
+            try {
+                return LocalDate.parse(dateStr, DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+            } catch (DateTimeParseException e) {
+                System.out.println("Invalid date format. Please enter the date in format dd.MM.yyyy:");
+            }
+        }
+    }
+//Вывод на экран кредитов пользователя
     private static void displayUserCredits(User user) {
         HashMap<Long, Credit> credits = user.getCredits();
 
@@ -896,27 +1125,28 @@ public class Run {
         }
 
         System.out.println("\nUser Credits:");
-        line();
-        System.out.printf("%-4s %-15s %-20s %-20s %-20s %-20s %-20s %n", "№", "Credit Amount", "Interest Rate", "Total Term (months)", "Remaining Term (months)", "Remaining Amount", "Status");
-        line();
-        final int[] counter = {1};
+        line3();
+        System.out.printf("%-4s %-15s %-20s %-20s %-20s %-20s %-20s %n", "№", "Credit Amount", "Interest Rate", "Monthly Payment", "Remaining Term (months)", "Remaining Amount", "Status");
+        line3();
+        final int[] counter = {1};//Заменитель int counter++ для стрима
         credits.values().stream()
                 .sorted(Comparator.comparing(Credit::getStartDate))
                 .forEach(credit -> {
                     double annualInterestRate = credit.getAnnualInterestRate(credit.calculateLoanTermInMonths());
-                    int totalTerm = credit.calculateLoanTermInMonths();
                     int remainingTerm = credit.calculateRemainingTermInMonths();
                     double remainingAmount = credit.calculateRemainingTotalPayment();
-                    System.out.printf("%-4s %-15.2f %-20.2f %-20d %-20d %-20.2f %-20s %n",
+                    double monthlyPayment = credit.calculateMonthlyPayment();
+
+                    System.out.printf("%-4s %-15.2f %-20.2f %-20.2f %-20d %-20.2f %-20s %n",
                             counter[0]++,
                             credit.getCreditAmount(),
                             annualInterestRate,
-                            totalTerm,
+                            monthlyPayment,
                             remainingTerm,
                             remainingAmount,
                             credit.getStatus());
                 });
-        line();
+        line3();
     }
 
     //Выводим на экран все покупки пользователя в виде таблицы
@@ -929,9 +1159,9 @@ public class Run {
         }
 
         System.out.println("\nUser purchases: " + user.getName());
-        line();
+        line2();
         System.out.printf("%-4s %-20s %-20s %-20s %-10s %s%n", "№", "VIN Code", "Brand", "Model", "Price", "Purchase Date");
-        line();
+        line2();
 
         final int[] counter = {1}; // int counter внутри лямбды не работает. Нашел такой способ обойти.
         purchases.values().stream()
@@ -941,10 +1171,10 @@ public class Run {
                     System.out.printf("%-4s %-20s %-20s %-20s %-10d %s%n", counter[0]++, auto.getVinCode(), auto.getBrand(), auto.getModel(), auto.getPrice(), purchaseDate);
                 });
 
-        line();
+        line2();
     }
 
-    //Метод для поиска юзера по e-mail
+    //Метод для поиска юзера по e-mail (немного другой чем в менеджере, так было удобнее мне)
     private static User findUserByEmail() {
         System.out.print("Enter the user's email: ");
         String email = scanner.nextLine();
@@ -958,7 +1188,7 @@ public class Run {
         return user;
     }
 
-    // Метод для нахождения сотрудника по e-mail
+    // Метод для нахождения сотрудника по e-mail отличается от метода в менеджере
     private static Employee findEmployeeByEmail() {
         System.out.print("Enter the employee's email: ");
         String email = scanner.nextLine();
@@ -1209,8 +1439,11 @@ public class Run {
         System.out.println("-------------------------------------------------------------");
     }
 
-
     private static void line2() {
         System.out.println("--------------------------------------------------------------------------------------------");
+    }
+
+    private static void line3() {
+        System.out.println("-------------------------------------------------------------------------------------------------------------------");
     }
 }

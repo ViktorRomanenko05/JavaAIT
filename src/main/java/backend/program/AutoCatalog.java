@@ -143,6 +143,7 @@ public class AutoCatalog implements Serializable {
         }
     }
 
+
     //метод просмотра списка автомобилей
     public void displayAutoCatalog() {
         readAutoCatalogFromFile();
@@ -151,6 +152,18 @@ public class AutoCatalog implements Serializable {
                 System.out.println(auto);
             } else {
                 System.out.println("Auto Catalog is empty!");
+            }
+        }
+    }
+
+    //Метод просмотра списка проданных авто
+    public void displaySoldAutoCatalog() {
+        readAutoCatalogFromFile();
+        for (Auto auto : AutoCatalog.soldCars.values()) {
+            if (!AutoCatalog.soldCars.isEmpty()) {
+                System.out.println(auto);
+            } else {
+                System.out.println("Sold cars was not found!");
             }
         }
     }

@@ -73,6 +73,32 @@ public class User extends Person implements Serializable {
         }
     }
 
+    //Метод удаления тест-драйва
+    public void removeTestDriveByDetails(String vinCode, LocalDate date) {
+        if (vinCode == null || date == null) {
+            LOGGER.error("VIN code or date is null");
+            return;
+        }
+
+        boolean found = false;
+        for (int i = 0; i < testDrives.size(); i++) {
+            TestDrive currentTestDrive = testDrives.get(i);
+            if (currentTestDrive.getAuto().getVinCode().equalsIgnoreCase(vinCode) && currentTestDrive.getLocalDate().equals(date)) {
+                testDrives.remove(i);
+                found = true;
+                break;
+            }
+        }
+
+        if (found) {
+            LOGGER.info("Test drive with VIN " + vinCode + " on date " + date + " was removed for user " + this.getName());
+            PersonManager.users.put(this.getId(), this);
+            PersonManager.serializeUsers();
+        } else {
+            LOGGER.error("Failed to remove test drive with VIN " + vinCode + " on date " + date + " for user " + this.getName());
+        }
+    }
+
     // Метод для добавления кредита пользователю
     public void addCredit(Credit credit) {
         if (credit == null) {

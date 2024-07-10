@@ -59,6 +59,7 @@ public class TestDriveManager implements Serializable {
             if (testDrive.getLocalDate().equals(driveDate.getLocalDate()) &&
                     testDrive.getAuto().getVinCode().equalsIgnoreCase(driveDate.getAuto().getVinCode())) {
                 LOGGER.error("{} Auto {} {} is busy on this date", testDrive.getLocalDate(), testDrive.getAuto().getBrand(), testDrive.getAuto().getModel());
+                System.out.println(testDrive.getLocalDate() + " Auto " + testDrive.getAuto().getBrand() + " " + testDrive.getAuto().getModel() + " is busy on this date");
                 checkDate = true;
                 break;
             }
@@ -66,7 +67,11 @@ public class TestDriveManager implements Serializable {
         if (!checkDate) {
             testDriveList.add(testDrive);
             testDrive.getUser().addTestDrive(testDrive);
-            LOGGER.info("Test Drive was added{} {}", testDrive.getAuto().getModel(), testDrive.getLocalDate());
+            // Для логгера
+            LOGGER.info("User {} was scheduled for a test drive of {} on {}", testDrive.getUser().getName(), testDrive.getAuto().getModel(), testDrive.getLocalDate());
+
+// Для консоли
+            System.out.println("User " + testDrive.getUser().getName() + " was scheduled for a test drive of " + testDrive.getAuto().getModel() + " on " + testDrive.getLocalDate());
         }
         serializeTestDrives();
         PersonManager.serializeUsers();
@@ -85,12 +90,14 @@ public class TestDriveManager implements Serializable {
                     test.getAuto().getVinCode().equalsIgnoreCase(testDrive.getAuto().getVinCode())) {
                 checkResult = testDriveList.remove(test);
                 LOGGER.info("Test drive {} {} was removed.", test.getAuto(), test.getLocalDate());
+                serializeTestDrives();
                 break;
             }
         }
         if (!checkResult) {
             LOGGER.error("Test drive {} {} request not found", testDrive.getAuto().getModel(), testDrive.getUser().getName());
         }
+
     }
 
     //Вывод на экран всех записей Тест Драйв
