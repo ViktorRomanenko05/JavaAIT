@@ -1,0 +1,17 @@
+Report for period from 2024-07-07 to 2024-07-10
+===============================
+Total number of registered users: 1
+Number of users registered: 1
+Number of active users: 1
+Number of regular customers: 0
+Number of sold cars: 2
+Number of test-drives: 1
+Conversion rate: 200.0%
+Total revenue: $105362.0
+Revenue by employees:
+Automann: $105362.0
+Alex: $0.0
+Most popular brand: Mercedes-Benz
+Most popular model: EQE Limousine
+===============================
+End of report.
