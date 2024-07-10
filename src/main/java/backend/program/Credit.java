@@ -160,9 +160,9 @@ public class Credit implements Serializable {
         System.out.println("Loan Start Date: " + startDate.format(dateFormatter));
         System.out.println("Loan End Date: " + endDate.format(dateFormatter));
         System.out.println("Loan Term: " + loanTermInMonths + " months");
-        System.out.println("Monthly Payment: " + monthlyPayment);
-        System.out.println("Total Payment: " + totalPayment);
-        System.out.println("Remaining Total Payment: " + remainingAmount);
+        System.out.println("Monthly Payment: " + String.format("%.2f", monthlyPayment));
+        System.out.println("Total Payment: " + String.format("%.2f", totalPayment));
+        System.out.println("Remaining Total Payment: " + String.format("%.2f", remainingAmount));
         System.out.println("Remaining Payments Count: " + remainingTerm);
     }
 }
