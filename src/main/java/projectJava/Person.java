@@ -27,7 +27,7 @@ public class Person implements Serializable{
     public Person(String name, LocalDate birthday, double balance) {
         this.name = name;
         this.birthday = birthday;
-        this.balance = balance < 0 ? 0 : balance;
+        this.balance = balance;
         this.id = parseLong(generateId());
     }
 
