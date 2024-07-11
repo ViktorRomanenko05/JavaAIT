@@ -28,7 +28,7 @@ public class GameManager {
     public void serializeGames() {
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(file))) {
             objectOutputStream.writeObject(games);
-            LOGGER.info("Users have been serialized");
+            LOGGER.info("Games have been serialized");
         } catch (IOException exception) {
             LOGGER.error("Error during users serialization", exception.getMessage());
         }
@@ -38,12 +38,12 @@ public class GameManager {
     public void deserializeGames() {
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(file))) {
             games = (HashMap <String, Game>) objectInputStream.readObject();
-            LOGGER.info("Users have been deserialized");
+            LOGGER.info("Games have been deserialized");
         } catch (IOException exception) {
-            LOGGER.error("Error during users deserialization", exception.getMessage());
+            LOGGER.error("Error during games deserialization", exception.getMessage());
         }
         catch (ClassNotFoundException exception) {
-            LOGGER.error("Error during users deserialization", exception.getMessage());
+            LOGGER.error("Error during games deserialization", exception.getMessage());
         }
     }
 

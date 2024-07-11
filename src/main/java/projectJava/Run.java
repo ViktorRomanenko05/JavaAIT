@@ -18,7 +18,6 @@ public class Run {
     private static final Logger LOGGER = LoggerFactory.getLogger(Run.class);
     private static Scanner scanner = new Scanner(System.in);
     private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-    private static Faker faker = new Faker();
 
     public static void main(String[] args) {
         LOGGER.info("Start program");
@@ -60,8 +59,8 @@ public class Run {
                     return;
                 default:
                     System.out.println("Неверный выбор. Пожалуйста, попробуйте снова.");
+                    continue;
             }
-            scanner.close();
             LOGGER.info("End program");
         }
     }

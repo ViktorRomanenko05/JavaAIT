@@ -1,5 +1,6 @@
 package projectJava;
 
+import com.github.javafaker.Faker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +16,8 @@ import static java.lang.Long.parseLong;
 public class Person implements Serializable{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Person.class);
-
+    private static final long serialVersionUID = 1L;
+    private static Faker faker = new Faker();
 
     private String name;
     private final LocalDate birthday;

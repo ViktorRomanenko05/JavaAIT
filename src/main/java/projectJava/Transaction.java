@@ -8,6 +8,7 @@ import java.util.Objects;
 import static java.lang.Long.parseLong;
 
 public class Transaction implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private Person client;
     private Game game;
