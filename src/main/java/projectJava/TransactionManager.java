@@ -89,7 +89,7 @@ public class TransactionManager {
             if (bet < game.getMinimalBet() || bet > game.getMaximalBet()){
                 LOGGER.info("Bet should be from {} to {}", game.getMinimalBet(), game.getMaximalBet());
                 System.out.println("Ваша ставка должна быть в диапазоне от " + game.getMinimalBet() + "$ до " + game.getMaximalBet() + "$");
-                return; // Exit method on error
+                return;
             }
 
             Transaction newTransaction = new Transaction(user, game, bet, win);
@@ -103,6 +103,7 @@ public class TransactionManager {
             transactions.put(newTransaction.getId(), newTransaction);
             double newBalance = user.getBalance() + win;
             Person updateUser = new Person(user.getName(), user.getBirthday(), newBalance);
+            updateUser.setId(user.getId());
             personManager.addUser(updateUser);
 
             LOGGER.info("Transaction with ID {} was created", newTransaction.getId());
