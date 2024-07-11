@@ -42,7 +42,7 @@ public class PersonManager {
     public void deserializeUsers() {
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(file))) {
             users = (HashMap <String, Person>) objectInputStream.readObject();
-            LOGGER.info("Users have been dese`rialized");
+            LOGGER.info("Users have been deserialized");
         } catch (IOException exception) {
             LOGGER.error("Error during users deserialization", exception.getMessage());
         }

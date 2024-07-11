@@ -21,8 +21,7 @@ public class Run {
     private static Faker faker = new Faker();
 
     public static void main(String[] args) {
-
-        //personManager.createNewUser(faker.name(), faker.date(), faker.am);
+        LOGGER.info("Start program");
         String choice;
 
         System.out.println("Добро пожаловать в систему управления казино!");
@@ -62,6 +61,8 @@ public class Run {
                 default:
                     System.out.println("Неверный выбор. Пожалуйста, попробуйте снова.");
             }
+            scanner.close();
+            LOGGER.info("End program");
         }
     }
 
@@ -74,6 +75,7 @@ public class Run {
             name = scanner.nextLine();
             if (name == null || name.trim().isEmpty()) {
                 System.out.println("Имя не может быть пустым.");
+                LOGGER.info("Null name entered");
             } else {
                 break;
             }
@@ -88,6 +90,7 @@ public class Run {
                 int age = Period.between(birthday, LocalDate.now()).getYears();
                 if (age < 18) {
                     System.out.println("Пользователи моложе 18 лет не могут быть зарегистрированы.");
+                    LOGGER.info("Trying to register of user younger 18 y.o.");
                 } else if (age > 130) {
                     System.out.println("Пожалуйста, введите правильный возраст");
                 } else {
@@ -105,6 +108,7 @@ public class Run {
                 balance = Double.parseDouble(scanner.nextLine());
                 if (balance < 0) {
                     System.out.println("Баланс не может быть отрицательным. Пожалуйста, введите положительное значение.");
+                    LOGGER.info("Trying to enter negative balance.");
                 } else {
                     break;
                 }
@@ -126,6 +130,7 @@ public class Run {
             name = scanner.nextLine();
             if (name == null || name.trim().isEmpty()) {
                 System.out.println("Название игры не может быть пустым.");
+                LOGGER.info("Null name entered");
             } else {
                 break;
             }
@@ -150,6 +155,7 @@ public class Run {
                 minimalBet = Double.parseDouble(scanner.nextLine());
                 if (minimalBet <= 0) {
                     System.out.println("Минимальная ставка должна быть больше 0.");
+                    LOGGER.info("Trying to enter negative bet.");
                 } else {
                     break;
                 }
@@ -166,6 +172,7 @@ public class Run {
                 maximalBet = Double.parseDouble(scanner.nextLine());
                 if (maximalBet <= minimalBet) {
                     System.out.println("Максимальная ставка должна быть больше минимальной ставки.");
+                    LOGGER.info("Maximal bet is lower than minimal bet.");
                 } else {
                     break;
                 }
@@ -187,6 +194,7 @@ public class Run {
             userName = scanner.nextLine();
             if (userName == null || userName.trim().isEmpty()) {
                 System.out.println("Имя клиента не может быть пустым.");
+                LOGGER.info("Null name entered");
             } else {
                 break;
             }
@@ -198,6 +206,7 @@ public class Run {
             gameName = scanner.nextLine();
             if (gameName == null || gameName.trim().isEmpty()) {
                 System.out.println("Название игры не может быть пустым.");
+                LOGGER.info("Null game name entered");
             } else {
                 break;
             }
@@ -210,6 +219,7 @@ public class Run {
                 bet = Double.parseDouble(scanner.nextLine());
                 if (bet <= 0) {
                     System.out.println("Ставка должна быть больше 0.");
+                    LOGGER.info("Invalid bet entered");
                 } else {
                     break;
                 }
@@ -230,6 +240,7 @@ public class Run {
                         winOrLoss = Double.parseDouble(scanner.nextLine());
                         if (winOrLoss < 0) {
                             System.out.println("Сумма выигрыша не может быть отрицательной.");
+                            LOGGER.info("Negative win entered");
                         } else {
                             break;
                         }
@@ -246,6 +257,7 @@ public class Run {
                         winOrLoss = Double.parseDouble(scanner.nextLine());
                         if (winOrLoss >= 0) {
                             System.out.println("Сумма проигрыша должна быть отрицательной.");
+                            LOGGER.info("Positive loss entered");
                         } else {
                             break;
                         }
