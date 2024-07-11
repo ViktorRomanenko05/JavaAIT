@@ -47,12 +47,6 @@ public class GameManager {
         }
     }
 
-    /*
-    private String name;
-    private GameType type;
-    double minimalBet;
-    double maximalBet;
-     */
 
     //Создание новой игры
     public void createNewGame (String name, GameType type, Double minimalBet, Double maximalBet){

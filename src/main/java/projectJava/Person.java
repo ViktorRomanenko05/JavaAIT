@@ -17,7 +17,7 @@ public class Person implements Serializable{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Person.class);
     private static final long serialVersionUID = 1L;
-    private static Faker faker = new Faker();
+   // private static Faker faker = new Faker();
 
     private String name;
     private final LocalDate birthday;
@@ -56,6 +56,10 @@ public class Person implements Serializable{
         } else {
             this.balance = balance;
         }
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
     }
 
     public long getId() {

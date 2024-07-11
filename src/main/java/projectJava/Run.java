@@ -5,7 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -61,7 +60,6 @@ public class Run {
                     System.out.println("Неверный выбор. Пожалуйста, попробуйте снова.");
                     continue;
             }
-            LOGGER.info("End program");
         }
     }
 

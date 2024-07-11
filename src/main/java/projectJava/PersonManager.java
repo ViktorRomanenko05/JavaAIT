@@ -28,6 +28,12 @@ public class PersonManager {
         return new HashMap<>(users);
     }
 
+    public void addUser (Person user){
+        deserializeUsers();
+        users.put(user.getName(), user);
+        serializeUsers();
+    }
+
     //Сериализация пользователей
     public void serializeUsers() {
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(file))) {

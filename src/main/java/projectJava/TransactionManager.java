@@ -101,6 +101,10 @@ public class TransactionManager {
                 return; // Exit method on error
             }
             transactions.put(newTransaction.getId(), newTransaction);
+            double newBalance = user.getBalance() + win;
+            Person updateUser = new Person(user.getName(), user.getBirthday(), newBalance);
+            personManager.addUser(updateUser);
+
             LOGGER.info("Transaction with ID {} was created", newTransaction.getId());
             serializeTransactions();
         }
