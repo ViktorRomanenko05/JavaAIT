@@ -55,57 +55,67 @@ public class TransactionManager {
         }
 
         //Метод добавления новой транзакции
-        public void createNewTransaction(String userName, String gameName, Double bet, Double win, LocalDateTime date){
+        public void createNewTransaction(String userName, String gameName, Double bet, Double win){
             personManager.deserializeUsers();
             gameManager.deserializeGames();
 
             Game game = gameManager.getGames().get(gameName);
             Person user = personManager.getUsers().get(userName);
 
-            if(userName == null || gameName == null || bet == null || win == null || date == null){
+            if(userName == null || gameName == null || bet == null || win == null){
                 LOGGER.warn("Parameters cannot be null");
                 System.out.println("Поля не могут быть пустыми");
-
+                return; // Exit method on error
             }
 
-            else if (user == null) {
+            if (user == null) {
                 LOGGER.info("User with name {} was not found", userName);
                 System.out.println("Пользователь с именем " + userName + " не найден");
+                return; // Exit method on error
             }
 
-            else if (game == null) {
+            if (game == null) {
                 LOGGER.info("Game with name {} was not found", gameName);
                 System.out.println("Игра с именем " + gameName + " не найдена");
+                return; // Exit method on error
             }
 
-            else if (bet <= game.getMinimalBet() || bet >= game.getMaximalBet()){
-                LOGGER.info("Bet should be from {} to {}", game.getMinimalBet(), game.getMaximalBet());
-                System.out.println("Ваша ставка должна быть в диапазоне от " + game.getMinimalBet() + "$ до " + game.getMaximalBet() + "$");
-            }
-
-            else if (bet <= 0){
+            if (bet <= 0){
                 LOGGER.warn("Attempt to enter a negative bet");
                 System.out.println("Ставка не может быть отрицательной");
+                return; // Exit method on error
             }
 
-            else {
-                Transaction newTransaction = new Transaction(user,game, bet, win);
-                deserializeTransactions();
-                if (transactions.containsKey(newTransaction.getId())){
-                    LOGGER.warn("Transaction with ID {} is present in storage");
-                    System.out.println("Транзакция с таким id уже существует.\n" +
-                                       "Попробуйте создать транзакцию еще раз");
-                }
-                transactions.put(newTransaction.getId(), newTransaction);
-                serializeTransactions();
+            if (bet < game.getMinimalBet() || bet > game.getMaximalBet()){
+                LOGGER.info("Bet should be from {} to {}", game.getMinimalBet(), game.getMaximalBet());
+                System.out.println("Ваша ставка должна быть в диапазоне от " + game.getMinimalBet() + "$ до " + game.getMaximalBet() + "$");
+                return; // Exit method on error
             }
+
+            Transaction newTransaction = new Transaction(user, game, bet, win);
+            deserializeTransactions();
+            if (transactions.containsKey(newTransaction.getId())){
+                LOGGER.warn("Transaction with ID {} is present in storage", newTransaction.getId());
+                System.out.println("Транзакция с таким id уже существует.\n" +
+                        "Попробуйте создать транзакцию еще раз");
+                return; // Exit method on error
+            }
+            transactions.put(newTransaction.getId(), newTransaction);
+            LOGGER.info("Transaction with ID {} was created", newTransaction.getId());
+            serializeTransactions();
         }
 
         //Вывод всех транзакций на экран
         public void sortByNameAndPrint(){
             deserializeTransactions();
+            if (transactions.isEmpty()) {
+                System.out.println("Нет доступных транзакций для отображения.");
+                LOGGER.info("No transactions available for display");
+                return;
+            }
+
             List<Transaction> sortedTransactions = transactions.values().stream()
-                    .sorted(Comparator.comparing(Transaction::getDate))
+                    .sorted(Comparator.comparing(Transaction::getDate, Comparator.nullsLast(Comparator.naturalOrder())))
                     .collect(Collectors.toList());
             System.out.println("\nСписок транзакций:");
             line();
@@ -114,9 +124,14 @@ public class TransactionManager {
             int counter = 0;
             for (Transaction transactionToPrint : sortedTransactions) {
                 counter++;
-                System.out.printf("%-4s %-15s %-25s %-10s %-10s %s%n", counter, transactionToPrint.getDate().format(formatter), transactionToPrint.getClient().getName(), transactionToPrint.getBet(),transactionToPrint.getWin(), transactionToPrint.getId());
-                //line();
-
+                LocalDateTime date = transactionToPrint.getDate();
+                String formattedDate = (date != null) ? date.format(formatter) : "Дата не указана";
+                System.out.printf("%-4s %-15s %-25s %-10s %-10s %s%n", counter,
+                        formattedDate,
+                        transactionToPrint.getClient().getName(),
+                        transactionToPrint.getBet(),
+                        transactionToPrint.getWin(),
+                        transactionToPrint.getId());
             }
             line();
         }

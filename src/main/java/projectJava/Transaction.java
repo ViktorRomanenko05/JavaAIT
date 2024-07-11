@@ -22,6 +22,7 @@ public class Transaction implements Serializable {
         this.bet = bet;
         this.win = win;
         this.id = parseLong(generateId());
+        this.date = LocalDateTime.now();
     }
 
     // Метод для генерации ID

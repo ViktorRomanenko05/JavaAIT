@@ -260,6 +260,6 @@ public class Run {
             }
         }
 
-        transactionManager.createNewTransaction(userName, gameName, bet, winOrLoss, LocalDateTime.now());
+        transactionManager.createNewTransaction(userName, gameName, bet, winOrLoss);
     }
 }
