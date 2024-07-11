@@ -56,6 +56,7 @@ public class TransactionManager {
 
         //Метод добавления новой транзакции
         public void createNewTransaction(String userName, String gameName, Double bet, Double win){
+
             personManager.deserializeUsers();
             gameManager.deserializeGames();
 
@@ -92,22 +93,30 @@ public class TransactionManager {
                 return;
             }
 
-            Transaction newTransaction = new Transaction(user, game, bet, win);
-            deserializeTransactions();
-            if (transactions.containsKey(newTransaction.getId())){
-                LOGGER.warn("Transaction with ID {} is present in storage", newTransaction.getId());
-                System.out.println("Транзакция с таким id уже существует.\n" +
-                        "Попробуйте создать транзакцию еще раз");
-                return; // Exit method on error
-            }
-            transactions.put(newTransaction.getId(), newTransaction);
-            double newBalance = user.getBalance() + win;
-            Person updateUser = new Person(user.getName(), user.getBirthday(), newBalance);
-            updateUser.setId(user.getId());
-            personManager.addUser(updateUser);
+            if (user.getBalance()+win >= 0) {
+                Transaction newTransaction = new Transaction(user, game, bet, win);
+                deserializeTransactions();
+                if (transactions.containsKey(newTransaction.getId())) {
+                    LOGGER.warn("Transaction with ID {} is present in storage", newTransaction.getId());
+                    System.out.println("Транзакция с таким id уже существует.\n" +
+                            "Попробуйте создать транзакцию еще раз");
+                    return;
+                }
+                if (user.getBalance() + win >= 0)
+                    transactions.put(newTransaction.getId(), newTransaction);
+                double newBalance = user.getBalance() + win;
+                Person updateUser = new Person(user.getName(), user.getBirthday(), newBalance);
+                updateUser.setId(user.getId());
+                personManager.addUser(updateUser);
 
-            LOGGER.info("Transaction with ID {} was created", newTransaction.getId());
-            serializeTransactions();
+                LOGGER.info("Transaction with ID {} was created", newTransaction.getId());
+                serializeTransactions();
+            }
+            else {
+                LOGGER.info("User have no money for this transaction");
+                System.out.println("Недостаточный баланс для проведения транзакции");
+            }
+
         }
 
         //Вывод всех транзакций на экран
@@ -126,7 +135,7 @@ public class TransactionManager {
             line();
             System.out.printf("%-4s %-15s %-25s %-10s %-10s  %s%n", "№", "Time", "User name", "Bet", "Win", "Transaction ID");
             line();
-            int counter = 0;
+            int counter =0;
             for (Transaction transactionToPrint : sortedTransactions) {
                 counter++;
                 LocalDateTime date = transactionToPrint.getDate();

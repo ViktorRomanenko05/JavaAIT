@@ -66,6 +66,9 @@ public class Person implements Serializable{
         return id;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
 
     // Метод для генерации ID
     private String generateId() {
