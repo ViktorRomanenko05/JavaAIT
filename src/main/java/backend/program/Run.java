@@ -1115,6 +1115,7 @@ public class Run {
             }
         }
     }
+
 //Вывод на экран кредитов пользователя
     private static void displayUserCredits(User user) {
         HashMap<Long, Credit> credits = user.getCredits();
@@ -1174,7 +1175,7 @@ public class Run {
         line2();
     }
 
-    //Метод для поиска юзера по e-mail (немного другой чем в менеджере, так было удобнее мне)
+    //Метод для поиска юзера по e-mail
     private static User findUserByEmail() {
         System.out.print("Enter the user's email: ");
         String email = scanner.nextLine();
@@ -1188,7 +1189,7 @@ public class Run {
         return user;
     }
 
-    // Метод для нахождения сотрудника по e-mail отличается от метода в менеджере
+    // Метод для нахождения сотрудника по e-mail
     private static Employee findEmployeeByEmail() {
         System.out.print("Enter the employee's email: ");
         String email = scanner.nextLine();
