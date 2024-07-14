@@ -1115,6 +1115,7 @@ public class Run {
             }
         }
     }
+
 //Вывод на экран кредитов пользователя
     private static void displayUserCredits(User user) {
         HashMap<Long, Credit> credits = user.getCredits();
@@ -1174,7 +1175,7 @@ public class Run {
         line2();
     }
 
-    //Метод для поиска юзера по e-mail (немного другой чем в менеджере, так было удобнее мне)
+    //Метод для поиска юзера по e-mail
     private static User findUserByEmail() {
         System.out.print("Enter the user's email: ");
         String email = scanner.nextLine();
@@ -1188,7 +1189,7 @@ public class Run {
         return user;
     }
 
-    // Метод для нахождения сотрудника по e-mail отличается от метода в менеджере
+    // Метод для нахождения сотрудника по e-mail
     private static Employee findEmployeeByEmail() {
         System.out.print("Enter the employee's email: ");
         String email = scanner.nextLine();
@@ -1307,51 +1308,51 @@ public class Run {
     private static void displayReportOnScreen(LocalDate startDate, LocalDate endDate) {
         System.out.println("Generating report for period from " + startDate + " to " + endDate + "\n");
 
-        // Display total registered users
+        // Общее количество юзеров
         int totalUsers = statistics.usersQuantity();
         System.out.println("Total number of registered users: " + totalUsers);
 
-        // Display number of users registered in period
+        // Зарегистрированные за период
         int registeredUsers = statistics.usersRegisteredInPeriod(startDate, endDate);
         System.out.println("Number of users registered in period: " + registeredUsers);
 
-        // Display number of active users
+        // Количество активных юзеров
         int activeUsers = statistics.activeUsersQuantity();
         System.out.println("Number of active users: " + activeUsers);
 
-        // Display number of regular customers
+        // Количество постоянных клиенотв
         int regularCustomers = statistics.regularCustomers().size();
         System.out.println("Number of regular customers: " + regularCustomers);
 
-        // Display number of sold cars in period
+        // Количество проданных машин
         List<Auto> soldCarsInPeriod = autoCatalog.getAutosSoldBetweenDates(startDate, endDate);
         int soldCars = soldCarsInPeriod.size();
         System.out.println("Number of sold cars in period: " + soldCars);
 
-        // Display number of test-drives in period
+        // Количество тест-драйвов за период
         int testDrives = statistics.testDrivesInPeriod(startDate, endDate).size();
         System.out.println("Number of test-drives in period: " + testDrives);
 
-        // Display conversion rate in period
+        // Конверсия за период
         double conversionRate = statistics.conversionRateForPeriod(startDate, endDate);
         System.out.println("Conversion rate: " + conversionRate + "%");
 
-        // Display total revenue in period
+        // Выручка за период
         double totalRevenue = statistics.revenueForPeriod(startDate, endDate);
         System.out.println("Total revenue: $" + totalRevenue);
 
-        // Display revenue by employees in period
+        // Выручка сотрудника за период
         System.out.println("Revenue by employees:");
         for (Employee employee : personManager.getEmployees().values()) {
             double employeeRevenue = statistics.employeeRevenueForPeriod(employee, startDate, endDate);
             System.out.println(employee.getName() + ": $" + employeeRevenue);
         }
 
-        // Display most popular brand in period
+        // Самый популярный бренд за период
         String popularBrand = statistics.mostPopularBrandInPeriod(startDate, endDate);
         System.out.println("Most popular brand: " + popularBrand);
 
-        // Display most popular model in period
+        // Самая популярная модель за период
         String popularModel = statistics.mostPopularModelInPeriod(startDate, endDate);
         System.out.println("Most popular model: " + popularModel);
     }

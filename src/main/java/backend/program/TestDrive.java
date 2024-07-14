@@ -10,6 +10,7 @@ import java.time.LocalDate;
  */
 
 public class TestDrive implements Serializable {
+    private static final long serialVersionUID = 1L;
     private User user;
     private Auto auto;
     private LocalDate localDate;  //Дата и время записи на Тест Драйв

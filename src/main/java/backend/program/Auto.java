@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Auto implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private String vinCode; // уникальный ID - код VIN
     private String brand; // марка машины

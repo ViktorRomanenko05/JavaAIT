@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Faq implements Serializable {
+    private static final long serialVersionUID = 1L;
     private static File file = Path.of("src","main", "resources", "faq.txt").toFile();
     private static final Logger LOGGER = LoggerFactory.getLogger(Faq.class);
     private static TreeMap<String, String> faq = new TreeMap<>();
