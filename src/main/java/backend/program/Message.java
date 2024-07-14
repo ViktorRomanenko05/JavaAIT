@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Message implements Serializable {
+    private static final long serialVersionUID = 1L;
     //Объекты
     private Person sender;
 

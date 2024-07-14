@@ -13,6 +13,8 @@ import static java.lang.Long.parseLong;
 // Процентная ставка зависит от срока кредита
 
 public class Credit implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private double creditAmount;
     private LocalDateTime startDate;
     private LocalDateTime endDate;

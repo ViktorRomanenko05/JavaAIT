@@ -15,6 +15,7 @@ public class PersonManager {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PersonManager.class);
 
+
     static HashMap<Integer, User> users = new HashMap<>(); // Для хранения юзеров
     static HashMap<Integer, Employee> employees = new HashMap<>(); // Для хранения сотрудников
 
