@@ -22,7 +22,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 //тут можно указать только implements от ManagerInterfaceAutoCatalog, т.к он являестя наследником LookerInterfaceCatalog
-public class AutoCatalog implements Serializable {
+public class AutoCatalog {
     private static final Logger LOGGER = LoggerFactory.getLogger(AutoCatalog.class);
 
     File autoCatalogTxt = Path.of("src", "main", "resources", "AutoCatalog.txt").toFile();
@@ -40,13 +40,13 @@ public class AutoCatalog implements Serializable {
         String color = parts[7];
         LocalDate date = null;
 
-        // Проверяем, есть ли дата и не равна ли она 'null' или пустая строка
+        // Проверяем, есть ли дата и не равна ли она 'null' или пустой строка
         if (parts.length > 8 && parts[8] != null && !parts[8].trim().isEmpty() && !parts[8].equalsIgnoreCase("null")) {
             date = LocalDate.parse(parts[8], DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         }
 
         Auto auto = new Auto(vinCode, brand, model, price, yearOfProduction, shortCharacteristics, fullCharacteristics, color);
-        auto.setDate(date); // Убедитесь, что есть сеттер для даты в классе Auto
+        auto.setDate(date);
         return auto;
     };
 
@@ -88,7 +88,7 @@ public class AutoCatalog implements Serializable {
         try (BufferedReader reader = new BufferedReader(new FileReader(autoCatalogTxt))) {
             autoCatalog = reader.lines()
                     .map(autoMapFunction)
-                    .filter(auto -> auto != null)  // filter out any null values resulting from parsing errors
+                    .filter(auto -> auto != null)
                     .collect(Collectors.toMap(Auto::getVinCode, auto -> auto, (existing, replacement) -> existing, HashMap::new));
         } catch (IOException exception) {
             LOGGER.error("Error reading auto catalog: {}", exception.getMessage());
@@ -100,7 +100,7 @@ public class AutoCatalog implements Serializable {
         try (BufferedReader reader = new BufferedReader(new FileReader(soldCarsTxt))) {
             soldCars = reader.lines()
                     .map(autoMapFunction)
-                    .filter(auto -> auto != null)  // filter out any null values resulting from parsing errors
+                    .filter(auto -> auto != null)
                     .collect(Collectors.toMap(Auto::getVinCode, auto -> auto, (existing, replacement) -> existing, HashMap::new));
         } catch (IOException exception) {
             LOGGER.error("Error reading sold cars: {}", exception.getMessage());

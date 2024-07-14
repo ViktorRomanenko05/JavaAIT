@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class CreditManager implements Serializable {
+public class CreditManager {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CreditManager.class);
     private HashMap<Long, Credit> credits = new HashMap<>();

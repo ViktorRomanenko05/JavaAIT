@@ -356,7 +356,7 @@ public class Run {
 
             switch (choice) {
                 case "1":
-                    autoCatalog.displayAutoCatalog(); // directly call displayAutoCatalog method
+                    autoCatalog.displayAutoCatalog();
                     break;
                 case "2":
                     System.out.print("Enter the brand: ");
@@ -702,7 +702,7 @@ public class Run {
 
             Credit credit = new Credit(auto.getPrice(), startDateTime, endDateTime, user);
 
-            // Display credit details
+            // Вывод деталей кредита на экран
             credit.logCreditDetails();
 
             System.out.println("Do you confirm the purchase with credit? (yes/no)");
